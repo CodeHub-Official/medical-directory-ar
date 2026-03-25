@@ -7,3 +7,5 @@ titan_final_web.py
 refresh_brain.py
 .env
 .env.local
+.vercel
+.env*.local

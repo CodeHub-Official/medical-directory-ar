@@ -1,36 +1,9 @@
-# Dependencies
-node_modules
-.pnp
-.pnp.js
-
-# Testing
-coverage
-
-# Next.js
-.next
-out
-build
-dist
-
-# Environment variables
+node_modules/
+.next/
+data_source/
+*.pkl
+titan_builder.py
+titan_final_web.py
+refresh_brain.py
 .env
 .env.local
-.env.*.local
-
-# IDE
-.vscode
-.idea
-*.swp
-*.swo
-*~
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-.vercel

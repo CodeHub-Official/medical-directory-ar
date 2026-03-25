@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TITAN JOY VIP | تجربة الجمال الكاملة</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --fuchsia: #FF006E; --orange: #FFBE0B; --violet: #8338EC;
+            --bg: #050505; --card-bg: #111;
+        }
+        body { margin: 0; font-family: 'Cairo', sans-serif; background: var(--bg); color: white; overflow-x: hidden; scroll-behavior: smooth; }
+        
+        /* الهيدر */
+        .glass-nav { display: flex; justify-content: space-between; align-items: center; padding: 15px 5%; background: rgba(0,0,0,0.9); position: sticky; top: 0; z-index: 2000; border-bottom: 2px solid var(--fuchsia); }
+        .logo { font-size: 1.5rem; font-weight: 900; }
+        .logo span { color: var(--fuchsia); }
+
+        /* سكشن الهيرو */
+        .hero { padding: 40px 20px; text-align: center; background: radial-gradient(circle at top, #2d0012, #050505); }
+        .hero h1 { font-size: 2.2rem; line-height: 1.2; margin-bottom: 15px; }
+        .hero span { color: var(--orange); }
+
+        /* سكرولر القبل والبعد (صور 1 و 2) */
+        .ba-wrapper { padding: 10px; background: var(--card-bg); border-radius: 25px; margin: 20px auto; max-width: 500px; border: 1px solid var(--violet); }
+        .ba-container { position: relative; width: 100%; aspect-ratio: 1/1; border-radius: 20px; overflow: hidden; touch-action: none; }
+        .ba-img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center; }
+        
+        .ba-after { background-image: url('2.jpg'); } /* الصورة الثانية: النتيجة */
+        .ba-before { 
+            background-image: url('1.jpg'); /* الصورة الأولى: الحالة */
+            width: 50%; border-right: 4px solid var(--orange); z-index: 2;
+        }
+        .ba-slider { position: absolute; z-index: 10; width: 100%; height: 100%; top: 0; left: 0; opacity: 0; cursor: col-resize; }
+
+        /* معرض الجمال (صور من 3 إلى 10) */
+        .gallery { padding: 40px 15px; }
+        .gallery-title { text-align: center; color: var(--fuchsia); margin-bottom: 25px; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .grid-item { border-radius: 15px; overflow: hidden; height: 150px; border: 1px solid #222; }
+        .grid-item img { width: 100%; height: 100%; object-fit: cover; }
+
+        /* سكشن الخدمات (صور من 11 إلى 14) */
+        .services { padding: 40px 15px; background: #0a0a0a; }
+        .serv-card { display: flex; align-items: center; background: #151515; margin-bottom: 15px; border-radius: 15px; overflow: hidden; height: 100px; }
+        .serv-card img { width: 100px; height: 100%; object-fit: cover; }
+        .serv-card div { padding: 15px; }
+
+        /* سكشن العروض (صور من 15 إلى 18) */
+        .offers { padding: 40px 15px; text-align: center; }
+        .offer-scroll { display: flex; overflow-x: auto; gap: 15px; padding-bottom: 20px; }
+        .offer-box { min-width: 250px; background: var(--card-bg); border-radius: 20px; overflow: hidden; border-bottom: 3px solid var(--orange); }
+        .offer-box img { width: 100%; height: 150px; object-fit: cover; }
+
+        .joy-btn { background: linear-gradient(45deg, var(--fuchsia), var(--orange)); border: none; padding: 15px 35px; color: white; font-size: 1.1rem; border-radius: 50px; font-weight: bold; text-decoration: none; display: inline-block; margin: 20px 0; animation: pulse 2s infinite; }
+        @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+
+        footer { padding: 30px; text-align: center; background: #000; border-top: 1px solid var(--fuchsia); }
+    </style>
+</head>
+<body>
+
+    <nav class="glass-nav">
+        <div class="logo">TITAN<span>JOY</span></div>
+        <div style="color: var(--orange); font-size: 0.8rem;">CodeHub VIP</div>
+    </nav>
+
+    <header class="hero">
+        <h1>بشرتكِ تتنفس <br><span>بالتكنولوجيا الملكية</span></h1>
+        
+        <div class="ba-wrapper">
+            <div class="ba-container">
+                <div class="ba-after ba-img"></div>
+                <div class="ba-before ba-img" id="before-img"></div>
+                <input type="range" min="0" max="100" value="50" class="ba-slider" id="ba-range">
+            </div>
+        </div>
+        <a href="https://wa.me/201234567890" class="joy-btn">احجزي جلستكِ الآن</a>
+    </header>
+
+    <section class="gallery">
+        <h2 class="gallery-title">نتائجنا الحية</h2>
+        <div class="grid">
+            <div class="grid-item"><img src="3.jpg"></div>
+            <div class="grid-item"><img src="4.jpg"></div>
+            <div class="grid-item"><img src="5.jpg"></div>
+            <div class="grid-item"><img src="6.jpg"></div>
+            <div class="grid-item"><img src="7.jpg"></div>
+            <div class="grid-item"><img src="8.jpg"></div>
+            <div class="grid-item"><img src="9.jpg"></div>
+            <div class="grid-item"><img src="10.jpg"></div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="serv-card"><img src="11.jpg"><div><h4>ليزر بارد</h4><p>تكنولوجيا 2026</p></div></div>
+        <div class="serv-card"><img src="12.jpg"><div><h4>هيدرافيشل</h4><p>نضارة فورية</p></div></div>
+        <div class="serv-card"><img src="13.jpg"><div><h4>تنظيف بشرة</h4><p>عناية ملكية</p></div></div>
+        <div class="serv-card"><img src="14.jpg"><div><h4>فيلر وبوتكس</h4><p>بأيدي خبراء</p></div></div>
+    </section>
+
+    <section class="offers">
+        <h2 style="color: var(--orange);">باقات التوفير</h2>
+        <div class="offer-scroll">
+            <div class="offer-box"><img src="15.jpg"><h4>باقة العروس</h4></div>
+            <div class="offer-box"><img src="16.jpg"><h4>باقة الصيف</h4></div>
+            <div class="offer-box"><img src="17.jpg"><h4>باقة النضارة</h4></div>
+            <div class="offer-box"><img src="18.jpg"><h4>باقة VIP</h4></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>تم التطوير بواسطة <strong>CodeHub</strong> &copy; 2026</p>
+    </footer>
+
+    <script>
+        const slider = document.getElementById('ba-range');
+        const beforeImg = document.getElementById('before-img');
+        slider.addEventListener('input', (e) => {
+            beforeImg.style.width = e.target.value + '%';
+        });
+    </script>
+</body>
+</html>

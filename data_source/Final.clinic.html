@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TITAN JOY VIP | النسخة الكاملة</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --fuchsia: #FF006E; --orange: #FFBE0B; --violet: #8338EC;
+            --bg: #050505; --card-bg: #111;
+        }
+        body { margin: 0; font-family: 'Cairo', sans-serif; background: var(--bg); color: white; overflow-x: hidden; scroll-behavior: smooth; }
+        
+        /* 1. Cursor & Nav */
+        #magic-cursor { width: 20px; height: 20px; background: var(--fuchsia); border-radius: 50%; position: fixed; pointer-events: none; z-index: 10000; transition: transform 0.1s; box-shadow: 0 0 15px var(--fuchsia); }
+        .glass-nav { display: flex; justify-content: space-between; align-items: center; padding: 15px 5%; background: rgba(0,0,0,0.8); backdrop-filter: blur(15px); position: sticky; top: 0; z-index: 2000; border-bottom: 1px solid var(--fuchsia); }
+        .logo span { color: var(--fuchsia); }
+
+        /* 2. Hero & Pulse Button */
+        .hero { text-align: center; padding: 80px 20px; }
+        .hero h1 { font-size: 2.8rem; margin-bottom: 10px; }
+        .hero span { color: var(--orange); }
+        .joy-button { background: linear-gradient(45deg, var(--fuchsia), var(--orange)); border: none; padding: 18px 45px; color: white; font-size: 1.2rem; border-radius: 50px; cursor: pointer; font-weight: bold; animation: pulse 2s infinite; text-decoration: none; display: inline-block; }
+        @keyframes pulse { 0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 0, 110, 0.7); } 70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(255, 0, 110, 0); } 100% { transform: scale(1); } }
+
+        /* 3. Before & After Slider (مهم جداً) */
+        .ba-container { position: relative; width: 100%; max-width: 600px; height: 400px; margin: 50px auto; border-radius: 20px; overflow: hidden; border: 3px solid var(--violet); }
+        .ba-img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; }
+        .ba-after { background-image: url('https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=800'); }
+        .ba-before { background-image: url('https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=800'); width: 50%; border-right: 4px solid var(--orange); }
+        .ba-slider { position: absolute; z-index: 10; width: 100%; height: 100%; opacity: 0; cursor: col-resize; }
+
+        /* 4. Stats Counter */
+        .stats { display: flex; justify-content: space-around; padding: 50px 5%; background: var(--card-bg); margin: 40px 0; }
+        .stat-item h2 { color: var(--fuchsia); font-size: 2.5rem; margin: 0; }
+
+        /* 5. FAQ Accordion */
+        .faq { padding: 50px 10%; }
+        .faq-item { background: #1a1a1a; margin-bottom: 10px; border-radius: 10px; overflow: hidden; }
+        .faq-question { padding: 20px; cursor: pointer; display: flex; justify-content: space-between; font-weight: bold; border-bottom: 1px solid #333; }
+        .faq-answer { padding: 0 20px; max-height: 0; overflow: hidden; transition: 0.3s ease-out; color: #ccc; }
+
+        /* 6. Footer & Map */
+        footer { background: #000; padding: 40px 5%; border-top: 2px solid var(--fuchsia); text-align: center; }
+        .map-placeholder { width: 100%; height: 200px; background: #222; border-radius: 15px; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; color: #555; border: 1px dashed var(--orange); }
+    </style>
+</head>
+<body>
+
+    <div id="magic-cursor"></div>
+
+    <nav class="glass-nav">
+        <div class="logo">TITAN<span>JOY</span></div>
+        <a href="https://wa.me/201234567890" class="joy-button" style="padding: 10px 20px; font-size: 0.9rem;">واتساب مباشر</a>
+    </nav>
+
+    <header class="hero">
+        <h1>بشرتكِ تستحق <span>الرفاهية</span></h1>
+        <p>اسحبي السلايدر لمشاهدة نتائج جلسة الهيدرافيشل</p>
+        
+        <div class="ba-container">
+            <div class="ba-after ba-img"></div>
+            <div class="ba-before ba-img" id="before-img"></div>
+            <input type="range" min="0" max="100" value="50" class="ba-slider" id="ba-range">
+        </div>
+
+        <a href="https://wa.me/201234567890?text=أهلاً%20تايتان%20جوي،%20أرغب%20في%20حجز%20موعد" class="joy-button">احجزي موعدكِ الآن</a>
+    </header>
+
+    <section class="stats">
+        <div class="stat-item"><h2>+5000</h2><p>عميلة سعيدة</p></div>
+        <div class="stat-item"><h2>100%</h2><p>أمان طبي</p></div>
+        <div class="stat-item"><h2>12</h2><p>خبير متخصص</p></div>
+    </section>
+
+    <section class="faq">
+        <h2 style="text-align: center; color: var(--orange);">الأسئلة الشائعة</h2>
+        <div class="faq-item">
+            <div class="faq-question">هل جلسات الليزر مؤلمة؟ <span>+</span></div>
+            <div class="faq-answer"><p>نستخدم أحدث تقنيات التبريد لضمان تجربة خالية من الألم تماماً.</p></div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">متى تظهر نتائج الهيدرافيشل؟ <span>+</span></div>
+            <div class="faq-answer"><p>تظهر النضارة فوراً بعد الجلسة الأولى، وتتحسن بمرور الوقت.</p></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="map-placeholder">
+            <p>📍 التجمع الخامس - مول تايتان الطبي (خريطة تفاعلية)</p>
+        </div>
+        <p>تم بواسطة <strong>CodeHub</strong> &copy; 2026</p>
+    </footer>
+
+    <script>
+        // 1. Cursor
+        const cursor = document.getElementById('magic-cursor');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        // 2. Before & After Slider Logic
+        const slider = document.getElementById('ba-range');
+        const beforeImg = document.getElementById('before-img');
+        slider.addEventListener('input', (e) => {
+            beforeImg.style.width = e.target.value + '%';
+        });
+
+        // 3. FAQ Accordion Logic
+        document.querySelectorAll('.faq-question').forEach(q => {
+            q.addEventListener('click', () => {
+                const answer = q.nextElementSibling;
+                if (answer.style.maxHeight) {
+                    answer.style.maxHeight = null;
+                    q.querySelector('span').innerText = '+';
+                } else {
+                    answer.style.maxHeight = answer.scrollHeight + "px";
+                    q.querySelector('span').innerText = '-';
+                }
+            });
+        });
+
+        // 4. Hover Effects
+        document.querySelectorAll('.joy-button, .faq-item').forEach(el => {
+            el.addEventListener('mouseenter', () => cursor.style.transform = 'scale(3)');
+            el.addEventListener('mouseleave', () => cursor.style.transform = 'scale(1)');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODE HUB | Secure Tech Template</title>
+    <style>
+        :root {
+            --primary: #1a73e8;
+            --dark-bg: #050505;
+            --card-bg: #121212;
+            --text-light: #f8fafc;
+            --text-dim: #94a3b8;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        /* --- القائمة العلوية مع اللوجو الجديد --- */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 8%;
+            background: rgba(0, 0, 0, 0.95);
+            border-bottom: 2px solid var(--primary);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            font-weight: 900;
+            letter-spacing: -1px;
+            padding: 5px 10px;
+            border: 1px solid var(--primary);
+            border-radius: 4px;
+        }
+
+        .nav-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        /* --- القسم الرئيسي (Hero) --- */
+        .hero {
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 10%;
+            background: radial-gradient(circle at center, #1a73e810 0%, transparent 70%);
+        }
+
+        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+        .hero p { color: var(--text-dim); max-width: 600px; }
+
+        /* --- الجاليري الذكي (Responsive Gallery) --- */
+        .gallery-title {
+            text-align: center;
+            color: var(--primary);
+            margin: 40px 0;
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 0 8% 60px 8%;
+        }
+
+        .gallery-item {
+            position: relative;
+            height: 250px;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.05);
+            transition: 0.4s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+            box-shadow: 0 10px 30px rgba(26, 115, 232, 0.2);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(30%);
+            transition: 0.5s;
+        }
+
+        .gallery-item:hover img { filter: grayscale(0%); transform: scale(1.1); }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            text-align: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        /* --- سياسة الخصوصية --- */
+        .privacy {
+            background: var(--card-bg);
+            padding: 60px 8%;
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+
+        /* --- الفوتر --- */
+        .footer {
+            padding: 40px;
+            text-align: center;
+            background: #000;
+            border-top: 1px solid var(--primary);
+            font-size: 0.8rem;
+            color: var(--text-dim);
+        }
+
+        /* الاستجابة للشاشات (Media Queries) */
+        @media (max-width: 768px) {
+            .navbar { flex-direction: column; gap: 10px; }
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="brand-logo">
+            <span style="color: var(--primary); font-size: 1.2em;">{</span>
+            <span style="color: #fff; margin: 0 3px;">CODE_HUB</span>
+            <span style="color: var(--primary); font-size: 1.2em;">}</span>
+        </div>
+        <div class="nav-links">
+            <a href="#gallery">Gallery</a>
+            <a href="#privacy">Privacy</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Secure Digital Assets</h1>
+        <p>Premium templates designed for privacy-focused developers. No tracking. No backdoors. Total sovereignty.</p>
+    </section>
+
+    <h2 class="gallery-title" id="gallery">Our Showcase</h2>
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src=1.jpeg alt="Project 1">
+            <div class="overlay">Cyber Security Shield</div>
+        </div>
+        <div class="gallery-item">
+            <img src="2.jpg" alt="Project 2">
+            <div class="overlay">Data Integrity Layer</div>
+        </div>
+        <div class="gallery-item">
+            <img src="3.jpg" alt="Project 3">
+            <div class="overlay">Cloud Sovereignty</div>
+        </div>
+        <div class="gallery-item">
+            <img src="4.jpg" alt="Project 4">
+            <div class="overlay">Clean Architecture</div>
+        </div>
+    </div>
+
+    <section class="privacy" id="privacy">
+        <h3 style="color: var(--primary);">0% Tracking Policy</h3>
+        <p>At **CODE HUB**, we build tools that respect your environment. This code is 100% JavaScript-free and works entirely offline.</p>
+    </section>
+
+    <footer class="footer">
+        <div style="margin-bottom: 15px; font-weight: bold; color: var(--primary);">OFFICIAL CODE HUB TEMPLATE</div>
+        © 2026 Developed by Tarek | Verified Localhost Deployment.
+    </footer>
+
+</body>
+</html>

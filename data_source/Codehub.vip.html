@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TITAN JOY VIP | التحفة الفنية</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --fuchsia: #FF006E; --orange: #FFBE0B; --violet: #8338EC;
+            --bg: #030303;
+        }
+        body { 
+            margin: 0; font-family: 'Cairo', sans-serif; 
+            background: var(--bg); color: white; overflow-x: hidden;
+        }
+
+        /* ✨ التاتش الفني 1: خلفية الضوء التفاعلية */
+        .bg-glow {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), rgba(255, 0, 110, 0.15) 0%, transparent 50%);
+            z-index: -1; pointer-events: none;
+        }
+
+        /* هيدر فخم */
+        .glass-nav { 
+            display: flex; justify-content: space-between; align-items: center; 
+            padding: 20px 8%; background: rgba(0,0,0,0.7); 
+            backdrop-filter: blur(15px); position: sticky; top: 0; z-index: 2000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .logo { font-size: 1.6rem; font-weight: 900; letter-spacing: 1px; }
+        .logo span { color: var(--fuchsia); text-shadow: 0 0 15px var(--fuchsia); }
+
+        /* سكشن الهيرو السينمائي */
+        .hero { padding: 80px 20px; text-align: center; }
+        .hero h1 { 
+            font-size: 3rem; font-weight: 900; margin-bottom: 10px;
+            background: linear-gradient(to bottom, #fff, #888);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        }
+
+        /* سكرولر القبل والبعد (المؤطر) */
+        .ba-frame {
+            position: relative; max-width: 550px; margin: 40px auto;
+            padding: 15px; background: rgba(255,255,255,0.03);
+            border-radius: 40px; border: 1px solid rgba(255,255,255,0.1);
+            box-shadow: 0 40px 100px rgba(0,0,0,0.5);
+        }
+        .ba-container { 
+            position: relative; width: 100%; aspect-ratio: 1/1; 
+            border-radius: 30px; overflow: hidden; touch-action: none;
+        }
+        .ba-img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center; }
+        .ba-after { background-image: url('2.jpg'); }
+        .ba-before { 
+            background-image: url('1.jpg'); 
+            width: 50%; border-right: 3px solid var(--orange); z-index: 2;
+        }
+        .ba-slider { position: absolute; z-index: 10; width: 100%; height: 100%; top: 0; left: 0; opacity: 0; cursor: col-resize; }
+
+        /* معرض الصور (بنظام البطاقات الزجاجية) */
+        .gallery { padding: 60px 8%; }
+        .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+        .grid-item { 
+            border-radius: 25px; overflow: hidden; height: 220px; 
+            position: relative; border: 1px solid rgba(255,255,255,0.05);
+            transition: 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .grid-item:hover { transform: scale(1.05) translateY(-10px); border-color: var(--fuchsia); }
+        .grid-item img { width: 100%; height: 100%; object-fit: cover; }
+
+        /* سكشن الخدمات بلمسة نيون */
+        .services { padding: 40px 8%; }
+        .serv-card { 
+            display: flex; align-items: center; background: rgba(255,255,255,0.02);
+            margin-bottom: 20px; border-radius: 25px; padding: 10px;
+            border: 1px solid rgba(255,255,255,0.05);
+            transition: 0.4s;
+        }
+        .serv-card:hover { background: rgba(255,255,255,0.07); }
+        .serv-card img { width: 80px; height: 80px; border-radius: 20px; object-fit: cover; }
+        .serv-card div { padding: 0 20px; }
+        .serv-card h4 { margin: 0; color: var(--orange); }
+
+        .joy-btn { 
+            background: linear-gradient(45deg, var(--fuchsia), var(--violet)); 
+            border: none; padding: 20px 50px; color: white; font-size: 1.2rem; 
+            border-radius: 100px; font-weight: 900; text-decoration: none; 
+            display: inline-block; margin-top: 30px;
+            box-shadow: 0 15px 40px rgba(255, 0, 110, 0.3);
+            transition: 0.3s;
+        }
+        .joy-btn:hover { transform: translateY(-5px); box-shadow: 0 20px 50px rgba(255, 0, 110, 0.5); }
+
+        footer { padding: 60px 20px; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); opacity: 0.6; }
+    </style>
+</head>
+<body>
+
+    <div class="bg-glow" id="glow"></div>
+
+    <nav class="glass-nav">
+        <div class="logo">TITAN<span>JOY</span></div>
+        <div style="letter-spacing: 2px; font-size: 0.7rem; font-weight: bold; opacity: 0.8;">CODEHUB EDITION</div>
+    </nav>
+
+    <header class="hero">
+        <h1 id="title">الفخامة في <br><span>أبهى صورها</span></h1>
+        
+        <div class="ba-frame">
+            <div class="ba-container">
+                <div class="ba-after ba-img"></div>
+                <div class="ba-before ba-img" id="before-img"></div>
+                <input type="range" min="0" max="100" value="50" class="ba-slider" id="ba-range">
+            </div>
+        </div>
+        <a href="https://wa.me/201234567890" class="joy-btn">احجزي مكانكِ في عالم الصفوة</a>
+    </header>
+
+    <section class="gallery">
+        <div class="grid">
+            <div class="grid-item"><img src="3.jpg"></div>
+            <div class="grid-item"><img src="4.jpg"></div>
+            <div class="grid-item"><img src="5.jpg"></div>
+            <div class="grid-item"><img src="6.jpg"></div>
+            <div class="grid-item"><img src="7.jpg"></div>
+            <div class="grid-item"><img src="8.jpg"></div>
+            <div class="grid-item"><img src="9.jpg"></div>
+            <div class="grid-item"><img src="10.jpg"></div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="serv-card"><img src="11.jpg"><div><h4>ليزر بلاتينيوم</h4><p>وداعاً للألم تماماً</p></div></div>
+        <div class="serv-card"><img src="12.jpg"><div><h4>هيدرا بلس</h4><p>نضارة تخطف الأنظار</p></div></div>
+        <div class="serv-card"><img src="13.jpg"><div><h4>جلسات الـ VIP</h4><p>خصوصية تامة وعناية فائقة</p></div></div>
+    </section>
+
+    <footer>
+        <p>تم صياغة الفخامة بواسطة <strong>CodeHub</strong> &copy; 2026</p>
+    </footer>
+
+    <script>
+        // سكريبت القبل والبعد
+        const slider = document.getElementById('ba-range');
+        const beforeImg = document.getElementById('before-img');
+        slider.addEventListener('input', (e) => {
+            beforeImg.style.width = e.target.value + '%';
+        });
+
+        // ✨ سكريبت التاتش الفني: تتبع الماوس للإضاءة
+        const glow = document.getElementById('glow');
+        document.addEventListener('mousemove', (e) => {
+            const x = (e.clientX / window.innerWidth) * 100;
+            const y = (e.clientY / window.innerHeight) * 100;
+            glow.style.setProperty('--x', x + '%');
+            glow.style.setProperty('--y', y + '%');
+        });
+
+        // أنيميشن بسيط عند الظهور
+        window.addEventListener('scroll', () => {
+            const items = document.querySelectorAll('.grid-item, .serv-card');
+            items.forEach(item => {
+                const rect = item.getBoundingClientRect();
+                if(rect.top < window.innerHeight - 50) {
+                    item.style.opacity = '1';
+                    item.style.transform = 'translateY(0)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+

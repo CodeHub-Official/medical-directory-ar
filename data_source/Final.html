@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" id="mainHtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODE HUB | المتجر المتكامل</title>
+    <style>
+        /* أنيميشن الخلفية الحية - روح الموقع */
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1a2a6c);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow-x: hidden; min-height: 100vh;
+        }
+
+        /* هيدر احترافي شفاف */
+        header {
+            position: fixed; top: 0; width: 100%; padding: 15px 5%;
+            background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(15px);
+            display: flex; justify-content: space-between; align-items: center;
+            z-index: 2000; border-bottom: 1px solid rgba(212,175,55,0.2);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        /* توزيع الأزرار حسب طلبك */
+        .header-left { display: flex; align-items: center; order: -1; }
+        .header-right { display: flex; align-items: center; gap: 20px; }
+        
+        .brand-logo { font-size: 1.8rem; font-weight: 900; color: #f9e297; text-shadow: 0 0 10px rgba(249,226,151,0.3); }
+
+        .menu-btn { font-size: 2.2rem; color: #f9e297; cursor: pointer; transition: 0.3s; }
+        .menu-btn:hover { transform: rotate(90deg); color: white; }
+
+        /* القائمة الجانبية - تفتح من الشمال */
+        .side-menu {
+            position: fixed; top: 0; left: -300px; width: 300px; height: 100%;
+            background: rgba(5, 10, 24, 0.95); backdrop-filter: blur(20px);
+            transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1); z-index: 3000; padding: 100px 30px;
+            border-right: 2px solid #d4af37;
+        }
+        .side-menu.active { left: 0; }
+        .side-menu a {
+            display: block; color: white; text-decoration: none; font-size: 1.3rem;
+            margin-bottom: 25px; transition: 0.3s; padding: 10px; border-radius: 8px;
+        }
+        .side-menu a:hover { background: rgba(212,175,55,0.2); color: #f9e297; padding-right: 20px; }
+
+        /* زر اللغة الراقص */
+        .lang-switch {
+            background: transparent; color: #f9e297; border: 1px solid #f9e297;
+            padding: 8px 18px; border-radius: 50px; cursor: pointer; font-weight: bold; transition: 0.3s;
+        }
+        .lang-switch:hover { background: #f9e297; color: #050a18; box-shadow: 0 0 15px #f9e297; }
+
+        /* منطقة العنوان - سحر الاختفاء والظهور */
+        .hero-area {
+            margin-top: 120px; padding: 60px 20px; text-align: center;
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .hero-area:hover { opacity: 0.1; transform: scale(0.95); }
+
+        .main-title {
+            font-size: clamp(3rem, 8vw, 6rem); font-weight: 900;
+            background: linear-gradient(to bottom, #f9e297, #d4af37);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            letter-spacing: 10px; margin-bottom: 5px;
+        }
+
+        /* حاوي المنتجات - نظام الـ Grid (2 في الصف) */
+        .container { 
+            width: 100%; max-width: 1200px; margin: 0 auto; padding: 20px;
+            display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(212,175,55,0.2);
+            border-radius: 25px; overflow: hidden; transition: 0.5s;
+            display: flex; flex-direction: column; position: relative;
+        }
+        .card:hover { 
+            transform: translateY(-15px); background: rgba(255, 255, 255, 0.08);
+            border-color: #f9e297; box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        .img-box { width: 100%; height: 300px; overflow: hidden; }
+        .img-box img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
+        .card:hover .img-box img { transform: scale(1.1); }
+
+        .info-box { padding: 25px; text-align: center; }
+        .info-box h2 { font-size: 1.8rem; color: #f9e297; margin-bottom: 15px; }
+        .price { font-size: 2rem; color: #fff; font-weight: bold; margin-bottom: 20px; display: block; }
+
+        /* زر الشراء الإبداعي */
+        .buy-btn {
+            background: linear-gradient(45deg, #d4af37, #f9e297); color: #050a18;
+            border: none; padding: 12px 30px; border-radius: 50px; font-weight: 900;
+            cursor: pointer; text-transform: uppercase; transition: 0.3s;
+        }
+        .buy-btn:hover { transform: scale(1.1); box-shadow: 0 0 20px rgba(212,175,55,0.6); }
+
+        /* الفوتر - ختام المسك */
+        footer {
+            margin-top: 100px; padding: 50px 5%; background: rgba(0,0,0,0.5);
+            border-top: 1px solid #d4af37; text-align: center;
+        }
+        .footer-content { display: flex; flex-direction: column; gap: 20px; align-items: center; }
+        .social-icons { display: flex; gap: 20px; font-size: 1.5rem; }
+
+        /* الموبايل - كارت واحد في الصف */
+        @media (max-width: 850px) {
+            .container { grid-template-columns: 1fr; }
+            .side-menu { width: 250px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="side-menu" id="sideMenu">
+        <div style="position:absolute; top:30px; right:30px; cursor:pointer; font-size:2rem; color:#d4af37;" onclick="toggleMenu()">×</div>
+        <a href="#">🏠 الصفحة الرئيسية</a>
+        <a href="#">🛒 المتجر الملكي</a>
+        <a href="#">📜 تاريخنا (DOS Era)</a>
+        <a href="#">🤝 من نحن</a>
+        <a href="#">📞 اتصل بنا</a>
+    </div>
+
+    <header>
+        <div class="header-left">
+            <div class="menu-btn" onclick="toggleMenu()">☰</div>
+        </div>
+        
+        <div class="header-right">
+            <button class="lang-switch" onclick="toggleLanguage()" id="langBtn">English</button>
+            <div class="brand-logo">CODE HUB</div>
+        </div>
+    </header>
+
+    <div class="hero-area">
+        <h1 class="main-title">CODE HUB</h1>
+        <p style="color: #f9e297; font-size: 1.4rem; letter-spacing: 5px;">EXCLUSIVE DIGITAL MARKETPLACE</p>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="img-box"><img src="1.jpg" alt="Product"></div>
+            <div class="info-box">
+                <h2>كاميرا التصوير الفاخرة</h2>
+                <span class="price">$1,200</span>
+                <button class="buy-btn">أضف إلى السلة</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-box"><img src="2.jpg" alt="Product"></div>
+            <div class="info-box">
+                <h2>ساعة الأناقة الرقمية</h2>
+                <span class="price">$850</span>
+                <button class="buy-btn">أضف إلى السلة</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-box"><img src="3.jpg" alt="Product"></div>
+            <div class="info-box">
+                <h2>سماعات المحترفين</h2>
+                <span class="price">$450</span>
+                <button class="buy-btn">أضف إلى السلة</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-box"><img src="4.jpg" alt="Product"></div>
+            <div class="info-box">
+                <h2>جهاز الـ AI المحمول</h2>
+                <span class="price">$3,200</span>
+                <button class="buy-btn">أضف إلى السلة</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="brand-logo">CODE HUB</div>
+            <p>جميع الحقوق محفوظة © 2026 - صُنع بروح أيام الـ DOS وعقل الـ AI</p>
+            <div class="social-icons">
+                <span>FB</span> | <span>TW</span> | <span>IG</span> | <span>LI</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('sideMenu').classList.toggle('active');
+        }
+
+        function toggleLanguage() {
+            const html = document.getElementById('mainHtml');
+            const btn = document.getElementById('langBtn');
+            if (html.dir === 'rtl') {
+                html.dir = 'ltr'; 
+                btn.innerText = 'العربية';
+            } else {
+                html.dir = 'rtl'; 
+                btn.innerText = 'English';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -2,7 +2,7 @@
  * Data Utility Functions
  */
 
-import clinicsData from '@/data/clinics.json';
+import clinicsData from '../data/clinics.json';
 
 export interface Clinic {
   id: string;

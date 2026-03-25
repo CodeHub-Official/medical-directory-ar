@@ -1,0 +1,17 @@
+<style>
+    body { background: radial-gradient(circle at center, #001233 0%, #000 100%); color: #fff; font-family: 'Orbitron', sans-serif; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0; }
+    h1 { letter-spacing: 15px; text-shadow: 0 0 20px #ff0033; font-size: 3rem; text-align: center; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
+    .box { width: 160px; height: 160px; background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: 0.4s; cursor: pointer; }
+    .box:hover { transform: scale(1.1); border-color: #fff; box-shadow: 0 0 30px rgba(255,255,255,0.2); }
+    .dot { width: 45px; height: 45px; border-radius: 50%; margin-bottom: 15px; box-shadow: 0 0 25px currentColor; }
+</style>
+<div class="prime-container">
+    <h1>CODEHUB<br>PRIME</h1>
+    <div class="grid">
+        <div class="box"><div class="dot" style="color: #00ccff; background: #00ccff;"></div>ESTATE</div>
+        <div class="box"><div class="dot" style="color: #ff0033; background: #ff0033;"></div>AUTO</div>
+        <div class="box"><div class="dot" style="color: #ffcc00; background: #ffcc00;"></div>TOURISM</div>
+        <div class="box"><div class="dot" style="color: #9900ff; background: #9900ff;"></div>FASHION</div>
+    </div>
+</div>

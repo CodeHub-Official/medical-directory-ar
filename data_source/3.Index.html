@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dr. Ahmed Sabbagh | Elite Plastic Surgeon</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--gold:#C6A55C;
+--dark:#0c0c0c;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+font-family:'Inter',sans-serif;
+background:radial-gradient(circle at 20% 20%,rgba(198,165,92,0.08),transparent 40%),
+linear-gradient(135deg,#0c0c0c,#161616);
+color:#fff;
+overflow-x:hidden;
+opacity:0;
+animation:fadeIn 1.2s ease forwards;
+}
+
+@keyframes fadeIn{
+to{opacity:1;}
+}
+
+h1,h2,h3{
+font-family:'Playfair Display',serif;
+}
+
+section{
+padding:100px 8%;
+position:relative;
+}
+
+.glass{
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(20px);
+border:1px solid rgba(255,255,255,0.08);
+border-radius:24px;
+box-shadow:0 10px 40px rgba(0,0,0,0.6);
+}
+
+nav{
+position:fixed;
+width:100%;
+top:0;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+transition:.4s;
+}
+
+.brand{
+font-weight:600;
+letter-spacing:1px;
+font-size:18px;
+}
+
+.lang{
+cursor:pointer;
+color:var(--gold);
+font-size:14px;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+gap:30px;
+}
+
+.hero h1{
+font-size:clamp(36px,6vw,70px);
+line-height:1.05;
+}
+
+.hero p{
+color:#bbb;
+max-width:600px;
+}
+
+.btn{
+display:inline-block;
+padding:16px 32px;
+border-radius:50px;
+border:1px solid var(--gold);
+color:var(--gold);
+text-decoration:none;
+transition:.4s;
+position:relative;
+overflow:hidden;
+}
+
+.btn:before{
+content:"";
+position:absolute;
+width:0%;
+height:100%;
+left:0;
+top:0;
+background:var(--gold);
+transition:.4s;
+z-index:-1;
+}
+
+.btn:hover:before{
+width:100%;
+}
+
+.btn:hover{
+color:#000;
+}
+
+.services-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+margin-top:50px;
+}
+
+.service{
+padding:40px;
+transition:.4s;
+opacity:0;
+transform:translateY(40px);
+}
+
+.service.visible{
+opacity:1;
+transform:translateY(0);
+}
+
+.service:hover{
+transform:translateY(-10px);
+border-color:var(--gold);
+}
+
+.slider-container{
+position:relative;
+max-width:900px;
+margin:auto;
+border-radius:24px;
+overflow:hidden;
+box-shadow:0 20px 60px rgba(0,0,0,0.8);
+}
+
+.slider-container img{
+width:100%;
+display:block;
+}
+
+.after{
+position:absolute;
+top:0;
+left:0;
+width:50%;
+overflow:hidden;
+}
+
+.slider-line{
+position:absolute;
+top:0;
+left:50%;
+width:3px;
+height:100%;
+background:var(--gold);
+cursor:ew-resize;
+}
+
+.testimonial{
+padding:35px;
+margin-top:25px;
+opacity:0;
+transform:translateY(40px);
+transition:.6s;
+}
+
+.testimonial.visible{
+opacity:1;
+transform:translateY(0);
+}
+
+.footer{
+text-align:center;
+padding:50px 8%;
+color:#888;
+}
+
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+background:linear-gradient(135deg,var(--gold),#e8c77a);
+color:#000;
+padding:15px 25px;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
+box-shadow:0 10px 30px rgba(198,165,92,0.4);
+transition:.3s;
+}
+
+.whatsapp:hover{
+transform:scale(1.05);
+}
+
+.ar{
+font-family:'Cairo',sans-serif;
+}
+
+@media(max-width:768px){
+.hero{
+text-align:center;
+}
+}
+
+</style>
+</head>
+<body>
+
+<nav class="glass">
+<div class="brand" data-en="Dr. Ahmed Sabbagh" data-ar="د. أحمد الصباغ">
+Dr. Ahmed Sabbagh
+</div>
+<div class="lang" onclick="toggleLang()">EN | AR</div>
+</nav>
+
+<section class="hero">
+<h1 data-en="Luxury Aesthetic Surgery Redefined"
+data-ar="الجراحة التجميلية الفاخرة بمعايير عالمية">
+Luxury Aesthetic Surgery Redefined
+</h1>
+
+<p data-en="Elite Plastic & Aesthetic Surgeon in Cairo delivering precision, artistry and natural results."
+data-ar="استشاري جراحة التجميل ونحت الجسم في القاهرة بخبرة ودقة فنية عالية.">
+Elite Plastic & Aesthetic Surgeon in Cairo delivering precision, artistry and natural results.
+</p>
+
+<a href="https://wa.me/201033300494" class="btn"
+data-en="Request Private Consultation"
+data-ar="احجز استشارة خاصة">
+Request Private Consultation
+</a>
+</section>
+
+<section>
+<h2 data-en="Elite Services" data-ar="الخدمات المميزة">Elite Services</h2>
+
+<div class="services-grid">
+<div class="service glass">
+<h3>Rhinoplasty</h3>
+<p>Refined nose reshaping with balanced proportions.</p>
+</div>
+<div class="service glass">
+<h3>Body Contouring</h3>
+<p>Advanced sculpting for natural definition.</p>
+</div>
+<div class="service glass">
+<h3>Facial Aesthetics</h3>
+<p>Botox & fillers enhancing timeless beauty.</p>
+</div>
+</div>
+</section>
+
+<section>
+<h2>Before & After</h2>
+<div class="slider-container">
+<img src="before.jpg">
+<div class="after">
+<img src="after.jpg">
+</div>
+<div class="slider-line"></div>
+</div>
+</section>
+
+<section>
+<h2>Patient Reviews</h2>
+<div class="testimonial glass">Exceptional results and outstanding professionalism.</div>
+<div class="testimonial glass">Truly elite experience from consultation to final results.</div>
+</section>
+
+<div class="footer">
+© 2026 Dr. Ahmed Sabbagh – Elite Plastic & Aesthetic Surgeon
+</div>
+
+<a href="https://wa.me/201033300494" class="whatsapp">WhatsApp</a>
+
+<script>
+
+// Scroll Reveal
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("visible");
+}
+});
+},{threshold:0.2});
+
+document.querySelectorAll(".service,.testimonial").forEach(el=>{
+observer.observe(el);
+});
+
+// Slider
+const container=document.querySelector(".slider-container");
+const after=document.querySelector(".after");
+const line=document.querySelector(".slider-line");
+
+function slide(x){
+let rect=container.getBoundingClientRect();
+let percent=((x-rect.left)/rect.width)*100;
+percent=Math.max(0,Math.min(100,percent));
+after.style.width=percent+"%";
+line.style.left=percent+"%";
+}
+
+container.addEventListener("mousemove",e=>slide(e.clientX));
+container.addEventListener("touchmove",e=>slide(e.touches[0].clientX));
+
+// Translation
+function toggleLang(){
+const html=document.documentElement;
+const elements=document.querySelectorAll("[data-en]");
+if(html.lang==="en"){
+html.lang="ar";
+html.dir="rtl";
+document.body.classList.add("ar");
+elements.forEach(el=>el.innerText=el.getAttribute("data-ar"));
+}else{
+html.lang="en";
+html.dir="ltr";
+document.body.classList.remove("ar");
+elements.forEach(el=>el.innerText=el.getAttribute("data-en"));
+}
+}
+
+</script>
+
+</body>
+</html>

@@ -68,7 +68,7 @@ export function getClinicById(id: string): Clinic | undefined {
  */
 export function getClinicsByCity(city: string): Clinic[] {
   return clinicsData.clinics.filter(
-    (clinic) => clinic.city.toLowerCase() === city.toLowerCase()
+    (clinic) => clinic.city.toLowerCase() === city.toLowerCase() || clinic.cityEn.toLowerCase() === city.toLowerCase()
   );
 }
 
@@ -90,7 +90,7 @@ export function getClinicsByCityAndSpecialty(
 ): Clinic[] {
   return clinicsData.clinics.filter(
     (clinic) =>
-      clinic.city.toLowerCase() === city.toLowerCase() &&
+      clinic.city.toLowerCase() === city.toLowerCase() || clinic.cityEn.toLowerCase() === city.toLowerCase() &&
       clinic.specialty.toLowerCase() === specialty.toLowerCase()
   );
 }
@@ -214,7 +214,7 @@ export function getUniqueDistricts(): string[] {
  */
 export function getClinicsCountByCity(city: string): number {
   return clinicsData.clinics.filter(
-    (clinic) => clinic.city.toLowerCase() === city.toLowerCase()
+    (clinic) => clinic.city.toLowerCase() === city.toLowerCase() || clinic.cityEn.toLowerCase() === city.toLowerCase()
   ).length;
 }
 

@@ -64,7 +64,7 @@ export default function CityPage({ params }: { params: { slug: string } }) {
     );
   }
 
-  const clinics = getClinicsByCity(city.name);
+  const clinics = getClinicsByCity(city.nameEn);
   const breadcrumbSchema = generateBreadcrumbSchema(
     [
       { name: 'الرئيسية', url: siteUrl },

@@ -16,7 +16,12 @@
       "googleRating": 4.8,
       "googleReviews": 150,
       "description": "عيادة متخصصة في جراحات التجميل والليزر بأحدث التقنيات",
-      "services": ["جراحات تجميل", "ليزر", "حقن الفيلر", "البوتوكس"],
+      "services": [
+        "جراحات تجميل",
+        "ليزر",
+        "حقن الفيلر",
+        "البوتوكس"
+      ],
       "socialMedia": {
         "facebook": "https://facebook.com/nourclinic",
         "instagram": "https://instagram.com/nourclinic"
@@ -40,7 +45,12 @@
       "googleRating": 4.7,
       "googleReviews": 200,
       "description": "مركز متخصص في تحسين المظهر والعناية بالبشرة",
-      "services": ["تحسين المظهر", "عناية بالبشرة", "ليزر", "تقشير كيميائي"],
+      "services": [
+        "تحسين المظهر",
+        "عناية بالبشرة",
+        "ليزر",
+        "تقشير كيميائي"
+      ],
       "socialMedia": {
         "instagram": "https://instagram.com/tahseenclinic"
       },
@@ -63,7 +73,12 @@
       "googleRating": 4.6,
       "googleReviews": 180,
       "description": "عيادة متخصصة في جراحات التجميل والعناية بالبشرة",
-      "services": ["جراحات تجميل", "ليزر", "حقن", "تقشير"],
+      "services": [
+        "جراحات تجميل",
+        "ليزر",
+        "حقن",
+        "تقشير"
+      ],
       "socialMedia": {
         "facebook": "https://facebook.com/changeme",
         "youtube": "https://youtube.com/changeme"
@@ -87,7 +102,12 @@
       "googleRating": 4.9,
       "googleReviews": 220,
       "description": "عيادة متخصصة في الأمراض الجلدية والتجميل",
-      "services": ["أمراض جلدية", "ليزر", "تقشير", "حقن"],
+      "services": [
+        "أمراض جلدية",
+        "ليزر",
+        "تقشير",
+        "حقن"
+      ],
       "socialMedia": {
         "instagram": "https://instagram.com/cutisclinic"
       },
@@ -110,7 +130,12 @@
       "googleRating": 4.5,
       "googleReviews": 160,
       "description": "مركز متخصص في نحت الجسم والتجميل",
-      "services": ["نحت الجسم", "ليزر", "حقن", "تقشير"],
+      "services": [
+        "نحت الجسم",
+        "ليزر",
+        "حقن",
+        "تقشير"
+      ],
       "socialMedia": {
         "facebook": "https://facebook.com/inshape"
       },
@@ -133,7 +158,12 @@
       "googleRating": 4.4,
       "googleReviews": 140,
       "description": "عيادة متخصصة في العناية بالبشرة والعلاجات الجلدية",
-      "services": ["عناية بالبشرة", "ليزر", "تقشير", "حقن"],
+      "services": [
+        "عناية بالبشرة",
+        "ليزر",
+        "تقشير",
+        "حقن"
+      ],
       "socialMedia": {
         "facebook": "https://facebook.com/edenskin",
         "instagram": "https://instagram.com/edenskin"
@@ -157,7 +187,12 @@
       "googleRating": 4.7,
       "googleReviews": 190,
       "description": "مركز متخصص في علاجات الليزر المتقدمة",
-      "services": ["إزالة الشعر بالليزر", "تقشير الجلد", "إزالة الوشم", "علاج حب الشباب"],
+      "services": [
+        "إزالة الشعر بالليزر",
+        "تقشير الجلد",
+        "إزالة الوشم",
+        "علاج حب الشباب"
+      ],
       "socialMedia": {},
       "category": "B",
       "image": "https://via.placeholder.com/400x300?text=Cosmo+Laser"
@@ -178,7 +213,12 @@
       "googleRating": 4.3,
       "googleReviews": 120,
       "description": "عيادة متخصصة في جراحات التجميل والعناية",
-      "services": ["جراحات تجميل", "ليزر", "حقن", "تقشير"],
+      "services": [
+        "جراحات تجميل",
+        "ليزر",
+        "حقن",
+        "تقشير"
+      ],
       "socialMedia": {},
       "category": "B",
       "image": "https://via.placeholder.com/400x300?text=Majesty+Clinic"
@@ -199,7 +239,12 @@
       "googleRating": 4.6,
       "googleReviews": 170,
       "description": "عيادة متخصصة في التجميل والعناية بالبشرة",
-      "services": ["جراحات تجميل", "ليزر", "حقن", "تقشير"],
+      "services": [
+        "جراحات تجميل",
+        "ليزر",
+        "حقن",
+        "تقشير"
+      ],
       "socialMedia": {},
       "category": "B",
       "image": "https://via.placeholder.com/400x300?text=La+Grace"
@@ -220,7 +265,12 @@
       "googleRating": 4.5,
       "googleReviews": 150,
       "description": "مركز متخصص في التجميل والعناية بالبشرة",
-      "services": ["جراحات تجميل", "ليزر", "حقن", "تقشير"],
+      "services": [
+        "جراحات تجميل",
+        "ليزر",
+        "حقن",
+        "تقشير"
+      ],
       "socialMedia": {},
       "category": "B",
       "image": "https://via.placeholder.com/400x300?text=Gozel+Clinic"
@@ -241,7 +291,11 @@
       "googleRating": 4.2,
       "googleReviews": 100,
       "description": "عيادة متخصصة في التجميل والعناية",
-      "services": ["جراحات تجميل", "ليزر", "حقن"],
+      "services": [
+        "جراحات تجميل",
+        "ليزر",
+        "حقن"
+      ],
       "socialMedia": {},
       "category": "B",
       "image": "https://via.placeholder.com/400x300?text=Barbie+Clinic"
@@ -262,7 +316,12 @@
       "googleRating": 4.6,
       "googleReviews": 160,
       "description": "عيادة متخصصة في الأمراض الجلدية والعناية",
-      "services": ["أمراض جلدية", "ليزر", "تقشير", "حقن"],
+      "services": [
+        "أمراض جلدية",
+        "ليزر",
+        "تقشير",
+        "حقن"
+      ],
       "socialMedia": {},
       "category": "B",
       "image": "https://via.placeholder.com/400x300?text=Derma+Care"
@@ -283,7 +342,12 @@
       "googleRating": 4.4,
       "googleReviews": 130,
       "description": "مركز متخصص في تجديد الشباب والتجميل",
-      "services": ["جراحات تجميل", "ليزر", "حقن", "تقشير"],
+      "services": [
+        "جراحات تجميل",
+        "ليزر",
+        "حقن",
+        "تقشير"
+      ],
       "socialMedia": {},
       "category": "B",
       "image": "https://via.placeholder.com/400x300?text=Reviva+Clinic"
@@ -304,7 +368,12 @@
       "googleRating": 4.7,
       "googleReviews": 200,
       "description": "عيادة متخصصة في جراحات التجميل الحديثة",
-      "services": ["جراحات تجميل", "ليزر", "حقن", "تقشير"],
+      "services": [
+        "جراحات تجميل",
+        "ليزر",
+        "حقن",
+        "تقشير"
+      ],
       "socialMedia": {
         "facebook": "https://facebook.com/tagmeelclinic"
       },
@@ -327,7 +396,12 @@
       "googleRating": 4.8,
       "googleReviews": 250,
       "description": "مركز متخصص في التجميل والعناية بالبشرة",
-      "services": ["جراحات تجميل", "ليزر", "حقن", "تقشير"],
+      "services": [
+        "جراحات تجميل",
+        "ليزر",
+        "حقن",
+        "تقشير"
+      ],
       "socialMedia": {},
       "category": "A",
       "image": "https://via.placeholder.com/400x300?text=Cleopatra+Beauty"
@@ -348,7 +422,12 @@
       "googleRating": 4.7,
       "googleReviews": 210,
       "description": "عيادة متخصصة في الجلدية والتجميل",
-      "services": ["أمراض جلدية", "ليزر", "تقشير", "حقن"],
+      "services": [
+        "أمراض جلدية",
+        "ليزر",
+        "تقشير",
+        "حقن"
+      ],
       "socialMedia": {
         "whatsapp": "01100115000"
       },
@@ -371,7 +450,12 @@
       "googleRating": 4.5,
       "googleReviews": 140,
       "description": "عيادة متخصصة في التجميل والعناية",
-      "services": ["جراحات تجميل", "ليزر", "حقن", "تقشير"],
+      "services": [
+        "جراحات تجميل",
+        "ليزر",
+        "حقن",
+        "تقشير"
+      ],
       "socialMedia": {
         "whatsapp": "01016666367"
       },
@@ -394,7 +478,12 @@
       "googleRating": 4.6,
       "googleReviews": 170,
       "description": "مركز متخصص في التجميل والعناية",
-      "services": ["جراحات تجميل", "ليزر", "حقن", "تقشير"],
+      "services": [
+        "جراحات تجميل",
+        "ليزر",
+        "حقن",
+        "تقشير"
+      ],
       "socialMedia": {
         "whatsapp": "01144400262"
       },
@@ -417,7 +506,12 @@
       "googleRating": 4.8,
       "googleReviews": 220,
       "description": "عيادة متخصصة في الجلدية والتجميل",
-      "services": ["أمراض جلدية", "ليزر", "تقشير", "حقن"],
+      "services": [
+        "أمراض جلدية",
+        "ليزر",
+        "تقشير",
+        "حقن"
+      ],
       "socialMedia": {
         "whatsapp": "01000600125"
       },
@@ -440,12 +534,857 @@
       "googleRating": 4.4,
       "googleReviews": 120,
       "description": "مركز متخصص في التجميل والعناية",
-      "services": ["جراحات تجميل", "ليزر", "حقن", "تقشير"],
+      "services": [
+        "جراحات تجميل",
+        "ليزر",
+        "حقن",
+        "تقشير"
+      ],
       "socialMedia": {
         "whatsapp": "01022214441"
       },
       "category": "B",
       "image": "https://via.placeholder.com/400x300?text=Violet+Clinic"
+    },
+    {
+      "id": "clinic-in-shape-clinic",
+      "name": "In Shape Clinic",
+      "nameEn": "In Shape Clinic",
+      "specialty": "تجميل ونحت جسم",
+      "specialtyEn": "تجميل",
+      "city": "التجمع الخامس",
+      "cityEn": "التجمع الخامس",
+      "district": "التجمع الخامس",
+      "address": "التجمع الخامس (أكثر من فرع)",
+      "phone": "16322",
+      "googleRating": 4.5,
+      "googleReviews": 50,
+      "description": "عيادة متخصصة في تجميل ونحت جسم في التجمع الخامس",
+      "services": [
+        "تجميل ونحت جسم"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://via.placeholder.com/400x300?text=Clinic"
+    },
+    {
+      "id": "clinic-mahy-clinic",
+      "name": "Mahy Clinic",
+      "nameEn": "Mahy Clinic",
+      "specialty": "تجميل",
+      "specialtyEn": "تجميل",
+      "city": "التجمع الخامس",
+      "cityEn": "التجمع الخامس",
+      "district": "التجمع الخامس",
+      "address": "ميديكال بارك 1 & اليجانتري",
+      "phone": "01055031310",
+      "googleRating": 4.5,
+      "googleReviews": 50,
+      "description": "عيادة متخصصة في تجميل في التجمع الخامس",
+      "services": [
+        "تجميل"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://via.placeholder.com/400x300?text=Clinic"
+    },
+    {
+      "id": "clinic-dr--heba-darwish",
+      "name": "Dr. Heba Darwish",
+      "nameEn": "Dr. Heba Darwish",
+      "specialty": "تجميل",
+      "specialtyEn": "تجميل",
+      "city": "التجمع الخامس",
+      "cityEn": "التجمع الخامس",
+      "district": "التجمع الخامس",
+      "address": "Elegantry Mall",
+      "phone": "01030272501",
+      "googleRating": 4.5,
+      "googleReviews": 50,
+      "description": "عيادة متخصصة في تجميل في التجمع الخامس",
+      "services": [
+        "تجميل"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://via.placeholder.com/400x300?text=Clinic"
+    },
+    {
+      "id": "clinic-dr--wael-mansour",
+      "name": "Dr. Wael Mansour",
+      "nameEn": "Dr. Wael Mansour",
+      "specialty": "تجميل",
+      "specialtyEn": "تجميل",
+      "city": "التجمع الخامس",
+      "cityEn": "التجمع الخامس",
+      "district": "التجمع الخامس",
+      "address": "التجمع الخامس",
+      "phone": "-",
+      "googleRating": 4.5,
+      "googleReviews": 50,
+      "description": "عيادة متخصصة في تجميل في التجمع الخامس",
+      "services": [
+        "تجميل"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://via.placeholder.com/400x300?text=Clinic"
+    },
+    {
+      "id": "clinic-dr--mohamed-fakher",
+      "name": "Dr. Mohamed Fakher",
+      "nameEn": "Dr. Mohamed Fakher",
+      "specialty": "جراحة تجميل",
+      "specialtyEn": "تجميل",
+      "city": "التجمع الخامس",
+      "cityEn": "التجمع الخامس",
+      "district": "التجمع الخامس",
+      "address": "التجمع الخامس",
+      "phone": "-",
+      "googleRating": 4.5,
+      "googleReviews": 50,
+      "description": "عيادة متخصصة في جراحة تجميل في التجمع الخامس",
+      "services": [
+        "جراحة تجميل"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://via.placeholder.com/400x300?text=Clinic"
+    },
+    {
+      "id": "clinic-lamoda-center",
+      "name": "LaModa Center",
+      "nameEn": "LaModa Center",
+      "specialty": "تجميل",
+      "specialtyEn": "تجميل",
+      "city": "التجمع الخامس",
+      "cityEn": "التجمع الخامس",
+      "district": "التجمع الخامس",
+      "address": "التجمع الخامس",
+      "phone": "-",
+      "googleRating": 4.5,
+      "googleReviews": 50,
+      "description": "عيادة متخصصة في تجميل في التجمع الخامس",
+      "services": [
+        "تجميل"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://via.placeholder.com/400x300?text=Clinic"
+    },
+    {
+      "id": "clinic-queens-clinics",
+      "name": "Queens Clinics",
+      "nameEn": "Queens Clinics",
+      "specialty": "جراحة تجميل وجلدية",
+      "specialtyEn": "تجميل",
+      "city": "التجمع الخامس",
+      "cityEn": "التجمع الخامس",
+      "district": "التجمع الخامس",
+      "address": "مول الحمد بلازا، أعلى كارفور",
+      "phone": "01204087831",
+      "googleRating": 4.5,
+      "googleReviews": 50,
+      "description": "عيادة متخصصة في جراحة تجميل وجلدية في التجمع الخامس",
+      "services": [
+        "جراحة تجميل وجلدية"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://via.placeholder.com/400x300?text=Clinic"
+    },
+    {
+      "id": "clinic-dr--amr-kaddah",
+      "name": "Dr. Amr Kaddah",
+      "nameEn": "Dr. Amr Kaddah",
+      "specialty": "جلدية وتجميل",
+      "specialtyEn": "تجميل",
+      "city": "التجمع الخامس",
+      "cityEn": "التجمع الخامس",
+      "district": "التجمع الخامس",
+      "address": "التجمع الخامس",
+      "phone": "-",
+      "googleRating": 4.5,
+      "googleReviews": 50,
+      "description": "عيادة متخصصة في جلدية وتجميل في التجمع الخامس",
+      "services": [
+        "جلدية وتجميل"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://via.placeholder.com/400x300?text=Clinic"
+    },
+    {
+      "id": "clinic-ke-clinics",
+      "name": "Ke Clinics",
+      "nameEn": "Ke Clinics",
+      "specialty": "تجميل",
+      "specialtyEn": "تجميل",
+      "city": "التجمع الخامس",
+      "cityEn": "التجمع الخامس",
+      "district": "التجمع الخامس",
+      "address": "التجمع الخامس",
+      "phone": "-",
+      "googleRating": 4.5,
+      "googleReviews": 50,
+      "description": "عيادة متخصصة في تجميل في التجمع الخامس",
+      "services": [
+        "تجميل"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://via.placeholder.com/400x300?text=Clinic"
+    },
+    {
+      "id": "clinic-عيادات-إدراك-التخصصية",
+      "name": "عيادات إدراك التخصصية",
+      "nameEn": "عيادات إدراك التخصصية",
+      "specialty": "جلدية",
+      "specialtyEn": "تجميل",
+      "city": "التجمع الخامس",
+      "cityEn": "التجمع الخامس",
+      "district": "التجمع الخامس",
+      "address": "شارع 15",
+      "phone": "01009000378",
+      "googleRating": 4.5,
+      "googleReviews": 50,
+      "description": "عيادة متخصصة في جلدية في التجمع الخامس",
+      "services": [
+        "جلدية"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://via.placeholder.com/400x300?text=Clinic"
+    },
+    {
+      "id": "clinic-عيادة-التجميل-الحديثة",
+      "name": "عيادة التجميل الحديثة",
+      "nameEn": "عيادة التجميل الحديثة",
+      "specialty": "تجميل وجلدية",
+      "specialtyEn": "تجميل وجلدية",
+      "city": "6 أكتوبر",
+      "cityEn": "6 أكتوبر",
+      "district": "6 أكتوبر",
+      "address": "حدائق أكتوبر - المنطقة الثانية - عمارة 45",
+      "phone": "01200000000",
+      "googleRating": 4.5,
+      "googleReviews": 50,
+      "description": "عيادة متخصصة في تجميل وجلدية في 6 أكتوبر",
+      "services": [
+        "تجميل وجلدية"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://via.placeholder.com/400x300?text=Clinic"
+    },
+    {
+      "id": "clinic-عيادة-د--ياسمين-تجميل",
+      "name": "عيادة د. ياسمين تجميل",
+      "nameEn": "عيادة د. ياسمين تجميل",
+      "specialty": "تجميل وجلدية",
+      "specialtyEn": "تجميل وجلدية",
+      "city": "6 أكتوبر",
+      "cityEn": "6 أكتوبر",
+      "district": "6 أكتوبر",
+      "address": "حدائق أكتوبر - ابني بيتك - المنطقة الأولى",
+      "phone": "01100002222",
+      "googleRating": 4.5,
+      "googleReviews": 50,
+      "description": "عيادة متخصصة في تجميل وجلدية في 6 أكتوبر",
+      "services": [
+        "تجميل وجلدية"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://via.placeholder.com/400x300?text=Clinic"
+    },
+    {
+      "id": "clinic-عيادة-د--سارة-جلدية",
+      "name": "عيادة د. سارة جلدية",
+      "nameEn": "عيادة د. سارة جلدية",
+      "specialty": "تجميل وجلدية",
+      "specialtyEn": "تجميل وجلدية",
+      "city": "6 أكتوبر",
+      "cityEn": "6 أكتوبر",
+      "district": "6 أكتوبر",
+      "address": "حدائق أكتوبر - كمبوند دجلة جاردنز",
+      "phone": "01200006666",
+      "googleRating": 4.5,
+      "googleReviews": 50,
+      "description": "عيادة متخصصة في تجميل وجلدية في 6 أكتوبر",
+      "services": [
+        "تجميل وجلدية"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://via.placeholder.com/400x300?text=Clinic"
+    },
+    {
+      "id": "clinic-د--رانيا-تجميل-وليزر",
+      "name": "د. رانيا تجميل وليزر",
+      "nameEn": "د. رانيا تجميل وليزر",
+      "specialty": "تجميل وجلدية",
+      "specialtyEn": "تجميل وجلدية",
+      "city": "6 أكتوبر",
+      "cityEn": "6 أكتوبر",
+      "district": "6 أكتوبر",
+      "address": "6 أكتوبر - الحي الحادي عشر - مول طيبة",
+      "phone": "01100008888",
+      "googleRating": 4.5,
+      "googleReviews": 50,
+      "description": "عيادة متخصصة في تجميل وجلدية في 6 أكتوبر",
+      "services": [
+        "تجميل وجلدية"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://via.placeholder.com/400x300?text=Clinic"
+    },
+    {
+      "id": "clinic-مركز-ليزر-كوين",
+      "name": "مركز ليزر كوين",
+      "nameEn": "مركز ليزر كوين",
+      "specialty": "تجميل وجلدية",
+      "specialtyEn": "تجميل وجلدية",
+      "city": "6 أكتوبر",
+      "cityEn": "6 أكتوبر",
+      "district": "6 أكتوبر",
+      "address": "6 أكتوبر - الحي الثاني عشر - سنتر الوجيه",
+      "phone": "01122221234",
+      "googleRating": 4.5,
+      "googleReviews": 50,
+      "description": "عيادة متخصصة في تجميل وجلدية في 6 أكتوبر",
+      "services": [
+        "تجميل وجلدية"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://via.placeholder.com/400x300?text=Clinic"
+    },
+    {
+      "id": "clinic-د--إيمان-جلدية-وتجميل",
+      "name": "د. إيمان جلدية وتجميل",
+      "nameEn": "د. إيمان جلدية وتجميل",
+      "specialty": "تجميل وجلدية",
+      "specialtyEn": "تجميل وجلدية",
+      "city": "6 أكتوبر",
+      "cityEn": "6 أكتوبر",
+      "district": "6 أكتوبر",
+      "address": "6 أكتوبر - الحي السابع - سنتر الأردنية",
+      "phone": "01077770000",
+      "googleRating": 4.5,
+      "googleReviews": 50,
+      "description": "عيادة متخصصة في تجميل وجلدية في 6 أكتوبر",
+      "services": [
+        "تجميل وجلدية"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://via.placeholder.com/400x300?text=Clinic"
+    },
+    {
+      "id": "clinic-د--هاني-جراحة-تجميل",
+      "name": "د. هاني جراحة تجميل",
+      "nameEn": "د. هاني جراحة تجميل",
+      "specialty": "تجميل وجلدية",
+      "specialtyEn": "تجميل وجلدية",
+      "city": "6 أكتوبر",
+      "cityEn": "6 أكتوبر",
+      "district": "6 أكتوبر",
+      "address": "6 أكتوبر - الحي العاشر - سنتر الفيروز",
+      "phone": "01100001234",
+      "googleRating": 4.5,
+      "googleReviews": 50,
+      "description": "عيادة متخصصة في تجميل وجلدية في 6 أكتوبر",
+      "services": [
+        "تجميل وجلدية"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://via.placeholder.com/400x300?text=Clinic"
+    },
+    {
+      "id": "clinic-عيادة-د--ليلى-جلدية",
+      "name": "عيادة د. ليلى جلدية",
+      "nameEn": "عيادة د. ليلى جلدية",
+      "specialty": "تجميل وجلدية",
+      "specialtyEn": "تجميل وجلدية",
+      "city": "6 أكتوبر",
+      "cityEn": "6 أكتوبر",
+      "district": "6 أكتوبر",
+      "address": "حدائق أكتوبر - كمبوند بداية",
+      "phone": "01011111234",
+      "googleRating": 4.5,
+      "googleReviews": 50,
+      "description": "عيادة متخصصة في تجميل وجلدية في 6 أكتوبر",
+      "services": [
+        "تجميل وجلدية"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://via.placeholder.com/400x300?text=Clinic"
+    },
+    {
+      "id": "clinic-vedette-clinic--dr--jehan-yehia-",
+      "name": "Vedette Clinic (Dr. Jehan Yehia)",
+      "nameEn": "Vedette Clinic (Dr. Jehan Yehia)",
+      "specialty": "تجميل وجلدية",
+      "specialtyEn": "تجميل وجلدية",
+      "city": "6 أكتوبر",
+      "cityEn": "6 أكتوبر",
+      "district": "6 أكتوبر",
+      "address": "6 أكتوبر الحي السابع ميدان ماجده مبني بريما فيستا الطبي الدور الثالت",
+      "phone": "+20 10 12534051",
+      "googleRating": 4.5,
+      "googleReviews": 50,
+      "description": "عيادة متخصصة في تجميل وجلدية في 6 أكتوبر",
+      "services": [
+        "تجميل وجلدية"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://via.placeholder.com/400x300?text=Clinic"
+    },
+    {
+      "id": "clinic-د--منى-تجميل",
+      "name": "د. منى تجميل",
+      "nameEn": "د. منى تجميل",
+      "specialty": "تجميل وجلدية",
+      "specialtyEn": "تجميل وجلدية",
+      "city": "6 أكتوبر",
+      "cityEn": "6 أكتوبر",
+      "district": "6 أكتوبر",
+      "address": "6 أكتوبر - الحي المتميز - بجوار رامو",
+      "phone": "01011111111",
+      "googleRating": 4.5,
+      "googleReviews": 50,
+      "description": "عيادة متخصصة في تجميل وجلدية في 6 أكتوبر",
+      "services": [
+        "تجميل وجلدية"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://via.placeholder.com/400x300?text=Clinic"
+    },
+    {
+      "id": "new-In-Shape-Clinic-الت",
+      "name": "In Shape Clinic",
+      "nameEn": "In Shape Clinic",
+      "specialty": "تجميل ونحت جسم",
+      "specialtyEn": "تجميل",
+      "city": "التجمع الخامس",
+      "cityEn": "التجمع الخامس",
+      "district": "التجمع الخامس",
+      "address": "التجمع الخامس (أكثر من فرع)",
+      "phone": "16322",
+      "googleRating": 4.5,
+      "googleReviews": 50,
+      "description": "عيادة متخصصة في تجميل ونحت جسم في التجمع الخامس",
+      "services": [
+        "تجميل ونحت جسم"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://via.placeholder.com/400x300?text=Clinic"
+    },
+    {
+      "id": "new-Mahy-Clinic-الت",
+      "name": "Mahy Clinic",
+      "nameEn": "Mahy Clinic",
+      "specialty": "تجميل",
+      "specialtyEn": "تجميل",
+      "city": "التجمع الخامس",
+      "cityEn": "التجمع الخامس",
+      "district": "التجمع الخامس",
+      "address": "ميديكال بارك 1 & اليجانتري",
+      "phone": "01055031310",
+      "googleRating": 4.5,
+      "googleReviews": 50,
+      "description": "عيادة متخصصة في تجميل في التجمع الخامس",
+      "services": [
+        "تجميل"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://via.placeholder.com/400x300?text=Clinic"
+    },
+    {
+      "id": "new-Dr--Heba-Darwish-الت",
+      "name": "Dr. Heba Darwish",
+      "nameEn": "Dr. Heba Darwish",
+      "specialty": "تجميل",
+      "specialtyEn": "تجميل",
+      "city": "التجمع الخامس",
+      "cityEn": "التجمع الخامس",
+      "district": "التجمع الخامس",
+      "address": "Elegantry Mall",
+      "phone": "01030272501",
+      "googleRating": 4.5,
+      "googleReviews": 50,
+      "description": "عيادة متخصصة في تجميل في التجمع الخامس",
+      "services": [
+        "تجميل"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://via.placeholder.com/400x300?text=Clinic"
+    },
+    {
+      "id": "new-Dr--Wael-Mansour-الت",
+      "name": "Dr. Wael Mansour",
+      "nameEn": "Dr. Wael Mansour",
+      "specialty": "تجميل",
+      "specialtyEn": "تجميل",
+      "city": "التجمع الخامس",
+      "cityEn": "التجمع الخامس",
+      "district": "التجمع الخامس",
+      "address": "التجمع الخامس",
+      "phone": "-",
+      "googleRating": 4.5,
+      "googleReviews": 50,
+      "description": "عيادة متخصصة في تجميل في التجمع الخامس",
+      "services": [
+        "تجميل"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://via.placeholder.com/400x300?text=Clinic"
+    },
+    {
+      "id": "new-Dr--Mohamed-Fakher-الت",
+      "name": "Dr. Mohamed Fakher",
+      "nameEn": "Dr. Mohamed Fakher",
+      "specialty": "جراحة تجميل",
+      "specialtyEn": "تجميل",
+      "city": "التجمع الخامس",
+      "cityEn": "التجمع الخامس",
+      "district": "التجمع الخامس",
+      "address": "التجمع الخامس",
+      "phone": "-",
+      "googleRating": 4.5,
+      "googleReviews": 9,
+      "description": "عيادة متخصصة في جراحة تجميل في التجمع الخامس",
+      "services": [
+        "جراحة تجميل"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://via.placeholder.com/400x300?text=Clinic"
+    },
+    {
+      "id": "new-LaModa-Center-الت",
+      "name": "LaModa Center",
+      "nameEn": "LaModa Center",
+      "specialty": "تجميل",
+      "specialtyEn": "تجميل",
+      "city": "التجمع الخامس",
+      "cityEn": "التجمع الخامس",
+      "district": "التجمع الخامس",
+      "address": "التجمع الخامس",
+      "phone": "-",
+      "googleRating": 4.5,
+      "googleReviews": 50,
+      "description": "عيادة متخصصة في تجميل في التجمع الخامس",
+      "services": [
+        "تجميل"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://via.placeholder.com/400x300?text=Clinic"
+    },
+    {
+      "id": "new-Queens-Clinics-الت",
+      "name": "Queens Clinics",
+      "nameEn": "Queens Clinics",
+      "specialty": "جراحة تجميل وجلدية",
+      "specialtyEn": "تجميل",
+      "city": "التجمع الخامس",
+      "cityEn": "التجمع الخامس",
+      "district": "التجمع الخامس",
+      "address": "مول الحمد بلازا، أعلى كارفور",
+      "phone": "01204087831",
+      "googleRating": 4.5,
+      "googleReviews": 3,
+      "description": "عيادة متخصصة في جراحة تجميل وجلدية في التجمع الخامس",
+      "services": [
+        "جراحة تجميل وجلدية"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://via.placeholder.com/400x300?text=Clinic"
+    },
+    {
+      "id": "new-Dr--Amr-Kaddah-الت",
+      "name": "Dr. Amr Kaddah",
+      "nameEn": "Dr. Amr Kaddah",
+      "specialty": "جلدية وتجميل",
+      "specialtyEn": "تجميل",
+      "city": "التجمع الخامس",
+      "cityEn": "التجمع الخامس",
+      "district": "التجمع الخامس",
+      "address": "التجمع الخامس",
+      "phone": "-",
+      "googleRating": 4.5,
+      "googleReviews": 50,
+      "description": "عيادة متخصصة في جلدية وتجميل في التجمع الخامس",
+      "services": [
+        "جلدية وتجميل"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://via.placeholder.com/400x300?text=Clinic"
+    },
+    {
+      "id": "new-Ke-Clinics-الت",
+      "name": "Ke Clinics",
+      "nameEn": "Ke Clinics",
+      "specialty": "تجميل",
+      "specialtyEn": "تجميل",
+      "city": "التجمع الخامس",
+      "cityEn": "التجمع الخامس",
+      "district": "التجمع الخامس",
+      "address": "التجمع الخامس",
+      "phone": "-",
+      "googleRating": 4.5,
+      "googleReviews": 50,
+      "description": "عيادة متخصصة في تجميل في التجمع الخامس",
+      "services": [
+        "تجميل"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://via.placeholder.com/400x300?text=Clinic"
+    },
+    {
+      "id": "new-عيادات-إدراك-التخصصية-الت",
+      "name": "عيادات إدراك التخصصية",
+      "nameEn": "عيادات إدراك التخصصية",
+      "specialty": "جلدية",
+      "specialtyEn": "تجميل",
+      "city": "التجمع الخامس",
+      "cityEn": "التجمع الخامس",
+      "district": "التجمع الخامس",
+      "address": "شارع 15",
+      "phone": "01009000378",
+      "googleRating": 4.5,
+      "googleReviews": 113,
+      "description": "عيادة متخصصة في جلدية في التجمع الخامس",
+      "services": [
+        "جلدية"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://via.placeholder.com/400x300?text=Clinic"
+    },
+    {
+      "id": "new-عيادة-التجميل-الحديثة-6 أ",
+      "name": "عيادة التجميل الحديثة",
+      "nameEn": "عيادة التجميل الحديثة",
+      "specialty": "تجميل وجلدية",
+      "specialtyEn": "تجميل وجلدية",
+      "city": "6 أكتوبر",
+      "cityEn": "6 أكتوبر",
+      "district": "6 أكتوبر",
+      "address": "حدائق أكتوبر - المنطقة الثانية - عمارة 45",
+      "phone": "01200000000",
+      "googleRating": 4.5,
+      "googleReviews": 34,
+      "description": "عيادة متخصصة في تجميل وجلدية في 6 أكتوبر",
+      "services": [
+        "تجميل وجلدية"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://via.placeholder.com/400x300?text=Clinic"
+    },
+    {
+      "id": "new-عيادة-د--ياسمين-تجميل-6 أ",
+      "name": "عيادة د. ياسمين تجميل",
+      "nameEn": "عيادة د. ياسمين تجميل",
+      "specialty": "تجميل وجلدية",
+      "specialtyEn": "تجميل وجلدية",
+      "city": "6 أكتوبر",
+      "cityEn": "6 أكتوبر",
+      "district": "6 أكتوبر",
+      "address": "حدائق أكتوبر - ابني بيتك - المنطقة الأولى",
+      "phone": "01100002222",
+      "googleRating": 4.5,
+      "googleReviews": 49,
+      "description": "عيادة متخصصة في تجميل وجلدية في 6 أكتوبر",
+      "services": [
+        "تجميل وجلدية"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://via.placeholder.com/400x300?text=Clinic"
+    },
+    {
+      "id": "new-عيادة-د--سارة-جلدية-6 أ",
+      "name": "عيادة د. سارة جلدية",
+      "nameEn": "عيادة د. سارة جلدية",
+      "specialty": "تجميل وجلدية",
+      "specialtyEn": "تجميل وجلدية",
+      "city": "6 أكتوبر",
+      "cityEn": "6 أكتوبر",
+      "district": "6 أكتوبر",
+      "address": "حدائق أكتوبر - كمبوند دجلة جاردنز",
+      "phone": "01200006666",
+      "googleRating": 4.5,
+      "googleReviews": 19,
+      "description": "عيادة متخصصة في تجميل وجلدية في 6 أكتوبر",
+      "services": [
+        "تجميل وجلدية"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://via.placeholder.com/400x300?text=Clinic"
+    },
+    {
+      "id": "new-د--رانيا-تجميل-وليزر-6 أ",
+      "name": "د. رانيا تجميل وليزر",
+      "nameEn": "د. رانيا تجميل وليزر",
+      "specialty": "تجميل وجلدية",
+      "specialtyEn": "تجميل وجلدية",
+      "city": "6 أكتوبر",
+      "cityEn": "6 أكتوبر",
+      "district": "6 أكتوبر",
+      "address": "6 أكتوبر - الحي الحادي عشر - مول طيبة",
+      "phone": "01100008888",
+      "googleRating": 4.5,
+      "googleReviews": 45,
+      "description": "عيادة متخصصة في تجميل وجلدية في 6 أكتوبر",
+      "services": [
+        "تجميل وجلدية"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://via.placeholder.com/400x300?text=Clinic"
+    },
+    {
+      "id": "new-مركز-ليزر-كوين-6 أ",
+      "name": "مركز ليزر كوين",
+      "nameEn": "مركز ليزر كوين",
+      "specialty": "تجميل وجلدية",
+      "specialtyEn": "تجميل وجلدية",
+      "city": "6 أكتوبر",
+      "cityEn": "6 أكتوبر",
+      "district": "6 أكتوبر",
+      "address": "6 أكتوبر - الحي الثاني عشر - سنتر الوجيه",
+      "phone": "01122221234",
+      "googleRating": 4.5,
+      "googleReviews": 25,
+      "description": "عيادة متخصصة في تجميل وجلدية في 6 أكتوبر",
+      "services": [
+        "تجميل وجلدية"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://via.placeholder.com/400x300?text=Clinic"
+    },
+    {
+      "id": "new-د--إيمان-جلدية-وتجميل-6 أ",
+      "name": "د. إيمان جلدية وتجميل",
+      "nameEn": "د. إيمان جلدية وتجميل",
+      "specialty": "تجميل وجلدية",
+      "specialtyEn": "تجميل وجلدية",
+      "city": "6 أكتوبر",
+      "cityEn": "6 أكتوبر",
+      "district": "6 أكتوبر",
+      "address": "6 أكتوبر - الحي السابع - سنتر الأردنية",
+      "phone": "01077770000",
+      "googleRating": 4.5,
+      "googleReviews": 8,
+      "description": "عيادة متخصصة في تجميل وجلدية في 6 أكتوبر",
+      "services": [
+        "تجميل وجلدية"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://via.placeholder.com/400x300?text=Clinic"
+    },
+    {
+      "id": "new-د--هاني-جراحة-تجميل-6 أ",
+      "name": "د. هاني جراحة تجميل",
+      "nameEn": "د. هاني جراحة تجميل",
+      "specialty": "تجميل وجلدية",
+      "specialtyEn": "تجميل وجلدية",
+      "city": "6 أكتوبر",
+      "cityEn": "6 أكتوبر",
+      "district": "6 أكتوبر",
+      "address": "6 أكتوبر - الحي العاشر - سنتر الفيروز",
+      "phone": "01100001234",
+      "googleRating": 4.5,
+      "googleReviews": 8,
+      "description": "عيادة متخصصة في تجميل وجلدية في 6 أكتوبر",
+      "services": [
+        "تجميل وجلدية"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://via.placeholder.com/400x300?text=Clinic"
+    },
+    {
+      "id": "new-عيادة-د--ليلى-جلدية-6 أ",
+      "name": "عيادة د. ليلى جلدية",
+      "nameEn": "عيادة د. ليلى جلدية",
+      "specialty": "تجميل وجلدية",
+      "specialtyEn": "تجميل وجلدية",
+      "city": "6 أكتوبر",
+      "cityEn": "6 أكتوبر",
+      "district": "6 أكتوبر",
+      "address": "حدائق أكتوبر - كمبوند بداية",
+      "phone": "01011111234",
+      "googleRating": 4.5,
+      "googleReviews": 6,
+      "description": "عيادة متخصصة في تجميل وجلدية في 6 أكتوبر",
+      "services": [
+        "تجميل وجلدية"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://via.placeholder.com/400x300?text=Clinic"
+    },
+    {
+      "id": "new-Vedette-Clinic--Dr--Jehan-Yehia--6 أ",
+      "name": "Vedette Clinic (Dr. Jehan Yehia)",
+      "nameEn": "Vedette Clinic (Dr. Jehan Yehia)",
+      "specialty": "تجميل وجلدية",
+      "specialtyEn": "تجميل وجلدية",
+      "city": "6 أكتوبر",
+      "cityEn": "6 أكتوبر",
+      "district": "6 أكتوبر",
+      "address": "6 أكتوبر الحي السابع ميدان ماجده مبني بريما فيستا الطبي الدور الثالت",
+      "phone": "+20 10 12534051",
+      "googleRating": 4.5,
+      "googleReviews": 33,
+      "description": "عيادة متخصصة في تجميل وجلدية في 6 أكتوبر",
+      "services": [
+        "تجميل وجلدية"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://via.placeholder.com/400x300?text=Clinic"
+    },
+    {
+      "id": "new-د--منى-تجميل-6 أ",
+      "name": "د. منى تجميل",
+      "nameEn": "د. منى تجميل",
+      "specialty": "تجميل وجلدية",
+      "specialtyEn": "تجميل وجلدية",
+      "city": "6 أكتوبر",
+      "cityEn": "6 أكتوبر",
+      "district": "6 أكتوبر",
+      "address": "6 أكتوبر - الحي المتميز - بجوار رامو",
+      "phone": "01011111111",
+      "googleRating": 4.5,
+      "googleReviews": 13,
+      "description": "عيادة متخصصة في تجميل وجلدية في 6 أكتوبر",
+      "services": [
+        "تجميل وجلدية"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://via.placeholder.com/400x300?text=Clinic"
     }
   ],
   "specialties": [
@@ -457,7 +1396,13 @@
       "description": "تخصص جراحات التجميل والعناية بالمظهر الخارجي",
       "descriptionEn": "Cosmetic surgery and aesthetic procedures",
       "icon": "✨",
-      "relatedServices": ["جراحات تجميل", "ليزر", "حقن الفيلر", "البوتوكس", "تقشير"]
+      "relatedServices": [
+        "جراحات تجميل",
+        "ليزر",
+        "حقن الفيلر",
+        "البوتوكس",
+        "تقشير"
+      ]
     },
     {
       "id": "specialty-002",
@@ -467,7 +1412,12 @@
       "description": "تخصص الأمراض الجلدية والعناية بصحة الجلد",
       "descriptionEn": "Dermatology and skin health",
       "icon": "🩺",
-      "relatedServices": ["علاج حب الشباب", "علاج الإكزيما", "إزالة الوشم", "ليزر"]
+      "relatedServices": [
+        "علاج حب الشباب",
+        "علاج الإكزيما",
+        "إزالة الوشم",
+        "ليزر"
+      ]
     },
     {
       "id": "specialty-003",
@@ -477,7 +1427,12 @@
       "description": "تخصص العلاجات بالليزر والتقنيات الحديثة",
       "descriptionEn": "Laser treatments and modern technologies",
       "icon": "💡",
-      "relatedServices": ["إزالة الشعر بالليزر", "تقشير الجلد", "إزالة الوشم", "علاج حب الشباب"]
+      "relatedServices": [
+        "إزالة الشعر بالليزر",
+        "تقشير الجلد",
+        "إزالة الوشم",
+        "علاج حب الشباب"
+      ]
     },
     {
       "id": "specialty-004",
@@ -487,7 +1442,12 @@
       "description": "تخصص الجلدية والتجميل معاً",
       "descriptionEn": "Dermatology and cosmetics combined",
       "icon": "💆",
-      "relatedServices": ["أمراض جلدية", "جراحات تجميل", "ليزر", "حقن"]
+      "relatedServices": [
+        "أمراض جلدية",
+        "جراحات تجميل",
+        "ليزر",
+        "حقن"
+      ]
     }
   ],
   "cities": [

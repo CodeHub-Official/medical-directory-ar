@@ -1,9 +1,11 @@
 /**
- * Data Utility Functions
+ * Data Utility Functions - CodeHub Medical Directory v2
+ * Fully Automated & Dynamic Version linked with Desert Admiral Engine
  */
 
 import clinicsData from '../data/clinics.json';
 
+// الـ Interfaces الأصلية للموقع لضمان استقرار النظام
 export interface Clinic {
   id: string;
   name: string;
@@ -49,25 +51,33 @@ export interface City {
   image: string;
 }
 
+// 🚀 الـ Interface الجديد الخاص بالمقالات الديناميكية
+export interface Article {
+  title: string;
+  slug: string;
+  description: string;
+  category?: string;
+}
+
 /**
  * Get all clinics
  */
 export function getAllClinics(): Clinic[] {
-  return clinicsData.clinics;
+  return (clinicsData as any).clinics || [];
 }
 
 /**
  * Get clinic by ID
  */
 export function getClinicById(id: string): Clinic | undefined {
-  return clinicsData.clinics.find((clinic) => clinic.id === id);
+  return getAllClinics().find((clinic) => clinic.id === id);
 }
 
 /**
  * Get clinics by city
  */
 export function getClinicsByCity(city: string): Clinic[] {
-  return clinicsData.clinics.filter(
+  return getAllClinics().filter(
     (clinic) => clinic.city.toLowerCase() === city.toLowerCase() || clinic.cityEn.toLowerCase() === city.toLowerCase()
   );
 }
@@ -76,7 +86,7 @@ export function getClinicsByCity(city: string): Clinic[] {
  * Get clinics by specialty
  */
 export function getClinicsBySpecialty(specialty: string): Clinic[] {
-  return clinicsData.clinics.filter(
+  return getAllClinics().filter(
     (clinic) => clinic.specialty.toLowerCase() === specialty.toLowerCase()
   );
 }
@@ -88,9 +98,9 @@ export function getClinicsByCityAndSpecialty(
   city: string,
   specialty: string
 ): Clinic[] {
-  return clinicsData.clinics.filter(
+  return getAllClinics().filter(
     (clinic) =>
-      clinic.city.toLowerCase() === city.toLowerCase() || clinic.cityEn.toLowerCase() === city.toLowerCase() &&
+      (clinic.city.toLowerCase() === city.toLowerCase() || clinic.cityEn.toLowerCase() === city.toLowerCase()) &&
       clinic.specialty.toLowerCase() === specialty.toLowerCase()
   );
 }
@@ -99,7 +109,7 @@ export function getClinicsByCityAndSpecialty(
  * Get clinics by district
  */
 export function getClinicsByDistrict(district: string): Clinic[] {
-  return clinicsData.clinics.filter(
+  return getAllClinics().filter(
     (clinic) => clinic.district.toLowerCase() === district.toLowerCase()
   );
 }
@@ -108,7 +118,7 @@ export function getClinicsByDistrict(district: string): Clinic[] {
  * Get top rated clinics
  */
 export function getTopRatedClinics(limit: number = 10): Clinic[] {
-  return [...clinicsData.clinics]
+  return [...getAllClinics()]
     .sort((a, b) => b.googleRating - a.googleRating)
     .slice(0, limit);
 }
@@ -117,7 +127,7 @@ export function getTopRatedClinics(limit: number = 10): Clinic[] {
  * Get clinics by category
  */
 export function getClinicsByCategory(category: string): Clinic[] {
-  return clinicsData.clinics.filter((clinic) => clinic.category === category);
+  return getAllClinics().filter((clinic) => clinic.category === category);
 }
 
 /**
@@ -125,7 +135,7 @@ export function getClinicsByCategory(category: string): Clinic[] {
  */
 export function searchClinics(query: string): Clinic[] {
   const lowerQuery = query.toLowerCase();
-  return clinicsData.clinics.filter(
+  return getAllClinics().filter(
     (clinic) =>
       clinic.name.toLowerCase().includes(lowerQuery) ||
       clinic.nameEn.toLowerCase().includes(lowerQuery) ||
@@ -139,21 +149,21 @@ export function searchClinics(query: string): Clinic[] {
  * Get all specialties
  */
 export function getAllSpecialties(): Specialty[] {
-  return clinicsData.specialties;
+  return (clinicsData as any).specialties || [];
 }
 
 /**
  * Get specialty by slug
  */
 export function getSpecialtyBySlug(slug: string): Specialty | undefined {
-  return clinicsData.specialties.find((spec) => spec.slug === slug);
+  return getAllSpecialties().find((spec) => spec.slug === slug);
 }
 
 /**
  * Get specialty by name
  */
 export function getSpecialtyByName(name: string): Specialty | undefined {
-  return clinicsData.specialties.find(
+  return getAllSpecialties().find(
     (spec) => spec.name.toLowerCase() === name.toLowerCase()
   );
 }
@@ -162,21 +172,21 @@ export function getSpecialtyByName(name: string): Specialty | undefined {
  * Get all cities
  */
 export function getAllCities(): City[] {
-  return clinicsData.cities;
+  return (clinicsData as any).cities || [];
 }
 
 /**
  * Get city by slug
  */
 export function getCityBySlug(slug: string): City | undefined {
-  return clinicsData.cities.find((city) => city.slug === slug);
+  return getAllCities().find((city) => city.slug === slug);
 }
 
 /**
  * Get city by name
  */
 export function getCityByName(name: string): City | undefined {
-  return clinicsData.cities.find(
+  return getAllCities().find(
     (city) => city.name.toLowerCase() === name.toLowerCase()
   );
 }
@@ -185,7 +195,7 @@ export function getCityByName(name: string): City | undefined {
  * Get unique cities from clinics
  */
 export function getUniqueCities(): string[] {
-  const cities = new Set(clinicsData.clinics.map((clinic) => clinic.city));
+  const cities = new Set(getAllClinics().map((clinic) => clinic.city));
   return Array.from(cities).sort();
 }
 
@@ -194,7 +204,7 @@ export function getUniqueCities(): string[] {
  */
 export function getUniqueSpecialties(): string[] {
   const specialties = new Set(
-    clinicsData.clinics.map((clinic) => clinic.specialty)
+    getAllClinics().map((clinic) => clinic.specialty)
   );
   return Array.from(specialties).sort();
 }
@@ -204,7 +214,7 @@ export function getUniqueSpecialties(): string[] {
  */
 export function getUniqueDistricts(): string[] {
   const districts = new Set(
-    clinicsData.clinics.map((clinic) => clinic.district)
+    getAllClinics().map((clinic) => clinic.district)
   );
   return Array.from(districts).sort();
 }
@@ -213,7 +223,7 @@ export function getUniqueDistricts(): string[] {
  * Get clinics count by city
  */
 export function getClinicsCountByCity(city: string): number {
-  return clinicsData.clinics.filter(
+  return getAllClinics().filter(
     (clinic) => clinic.city.toLowerCase() === city.toLowerCase() || clinic.cityEn.toLowerCase() === city.toLowerCase()
   ).length;
 }
@@ -222,7 +232,7 @@ export function getClinicsCountByCity(city: string): number {
  * Get clinics count by specialty
  */
 export function getClinicsCountBySpecialty(specialty: string): number {
-  return clinicsData.clinics.filter(
+  return getAllClinics().filter(
     (clinic) => clinic.specialty.toLowerCase() === specialty.toLowerCase()
   ).length;
 }
@@ -231,7 +241,7 @@ export function getClinicsCountBySpecialty(specialty: string): number {
  * Get similar clinics (same specialty and city)
  */
 export function getSimilarClinics(clinic: Clinic, limit: number = 5): Clinic[] {
-  return clinicsData.clinics
+  return getAllClinics()
     .filter(
       (c) =>
         c.id !== clinic.id &&
@@ -246,7 +256,7 @@ export function getSimilarClinics(clinic: Clinic, limit: number = 5): Clinic[] {
  * Get related clinics (same specialty, different city)
  */
 export function getRelatedClinics(clinic: Clinic, limit: number = 5): Clinic[] {
-  return clinicsData.clinics
+  return getAllClinics()
     .filter(
       (c) => c.id !== clinic.id && c.specialty === clinic.specialty
     )
@@ -258,7 +268,7 @@ export function getRelatedClinics(clinic: Clinic, limit: number = 5): Clinic[] {
  * Generate static paths for clinics
  */
 export function generateClinicPaths() {
-  return clinicsData.clinics.map((clinic) => ({
+  return getAllClinics().map((clinic) => ({
     params: {
       id: clinic.id,
     },
@@ -269,7 +279,7 @@ export function generateClinicPaths() {
  * Generate static paths for cities
  */
 export function generateCityPaths() {
-  return clinicsData.cities.map((city) => ({
+  return getAllCities().map((city) => ({
     params: {
       slug: city.slug,
     },
@@ -280,7 +290,7 @@ export function generateCityPaths() {
  * Generate static paths for specialties
  */
 export function generateSpecialtyPaths() {
-  return clinicsData.specialties.map((specialty) => ({
+  return getAllSpecialties().map((specialty) => ({
     params: {
       slug: specialty.slug,
     },
@@ -292,8 +302,8 @@ export function generateSpecialtyPaths() {
  */
 export function generateSpecialtyCityPaths() {
   const paths: any[] = [];
-  clinicsData.specialties.forEach((specialty) => {
-    clinicsData.cities.forEach((city) => {
+  getAllSpecialties().forEach((specialty) => {
+    getAllCities().forEach((city) => {
       paths.push({
         params: {
           specialty: specialty.slug,
@@ -304,3 +314,12 @@ export function generateSpecialtyCityPaths() {
   });
   return paths;
 }
+
+/**
+ * 🚀 الدالة الأوتوماتيكية الجديدة: قراءة المقالات من ملف الـ JSON مباشرة
+ * تُغذي قسم المقالات في الصفحة الرئيسية بدون أي تعديل كود مستقبلي
+ */
+export function getTopArticles(limit: number = 6): Article[] {
+  return ((clinicsData as any).articles || []).slice(0, limit);
+}
+

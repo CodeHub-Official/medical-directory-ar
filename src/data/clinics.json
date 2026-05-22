@@ -1,1477 +1,1933 @@
 {
   "clinics": [
     {
-      "id": "clinic-001",
-      "name": "عيادة نور",
-      "nameEn": "Nour Clinic",
+      "id": "clinic-1",
+      "name": "مستشفى جراحات التجميل",
       "specialty": "تجميل",
-      "specialtyEn": "cosmetics",
       "city": "القاهرة",
-      "cityEn": "cairo",
-      "district": "التجمع الخامس",
-      "address": "التجمع الخامس، القاهرة",
-      "phone": "16226",
-      "phone2": "01009355539",
-      "website": "",
-      "googleRating": 4.8,
-      "googleReviews": 150,
-      "description": "عيادة متخصصة في جراحات التجميل والليزر بأحدث التقنيات",
-      "services": [
-        "جراحات تجميل",
-        "ليزر",
-        "حقن الفيلر",
-        "البوتوكس"
-      ],
-      "socialMedia": {
-        "facebook": "https://facebook.com/nourclinic",
-        "instagram": "https://instagram.com/nourclinic"
-      },
-      "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Nour+Clinic"
-    },
-    {
-      "id": "clinic-002",
-      "name": "مركز تحسين",
-      "nameEn": "Tahseen Clinic",
-      "specialty": "تجميل",
-      "specialtyEn": "cosmetics",
-      "city": "القاهرة",
-      "cityEn": "cairo",
-      "district": "التجمع / زايد",
-      "address": "التجمع الخامس، القاهرة",
-      "phone": "01272444442",
-      "phone2": "",
-      "website": "",
-      "googleRating": 4.7,
-      "googleReviews": 200,
-      "description": "مركز متخصص في تحسين المظهر والعناية بالبشرة",
-      "services": [
-        "تحسين المظهر",
-        "عناية بالبشرة",
-        "ليزر",
-        "تقشير كيميائي"
-      ],
-      "socialMedia": {
-        "instagram": "https://instagram.com/tahseenclinic"
-      },
-      "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Tahseen+Clinic"
-    },
-    {
-      "id": "clinic-003",
-      "name": "تشينج مي",
-      "nameEn": "Change Me Clinic",
-      "specialty": "تجميل",
-      "specialtyEn": "cosmetics",
-      "city": "القاهرة",
-      "cityEn": "cairo",
-      "district": "مصر الجديدة",
-      "address": "مصر الجديدة، القاهرة",
-      "phone": "01225555230",
-      "phone2": "",
-      "website": "",
-      "googleRating": 4.6,
-      "googleReviews": 180,
-      "description": "عيادة متخصصة في جراحات التجميل والعناية بالبشرة",
-      "services": [
-        "جراحات تجميل",
-        "ليزر",
-        "حقن",
-        "تقشير"
-      ],
-      "socialMedia": {
-        "facebook": "https://facebook.com/changeme",
-        "youtube": "https://youtube.com/changeme"
-      },
-      "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Change+Me+Clinic"
-    },
-    {
-      "id": "clinic-004",
-      "name": "كتيس كلينك",
-      "nameEn": "Cutis Clinic",
-      "specialty": "جلدية",
-      "specialtyEn": "dermatology",
-      "city": "الجيزة",
-      "cityEn": "giza",
-      "district": "الشيخ زايد",
-      "address": "الشيخ زايد، الجيزة",
-      "phone": "01000674000",
-      "phone2": "",
-      "website": "",
+      "district": "",
+      "address": "",
+      "phone": "02-22040000",
       "googleRating": 4.9,
-      "googleReviews": 220,
-      "description": "عيادة متخصصة في الأمراض الجلدية والتجميل",
-      "services": [
-        "أمراض جلدية",
-        "ليزر",
-        "تقشير",
-        "حقن"
-      ],
-      "socialMedia": {
-        "instagram": "https://instagram.com/cutisclinic"
-      },
-      "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Cutis+Clinic"
-    },
-    {
-      "id": "clinic-005",
-      "name": "إنشيب كلينك",
-      "nameEn": "InShape",
-      "specialty": "تجميل",
-      "specialtyEn": "cosmetics",
-      "city": "القاهرة",
-      "cityEn": "cairo",
-      "district": "مدينة نصر",
-      "address": "مدينة نصر، القاهرة",
-      "phone": "19910",
-      "phone2": "",
-      "website": "",
-      "googleRating": 4.5,
-      "googleReviews": 160,
-      "description": "مركز متخصص في نحت الجسم والتجميل",
-      "services": [
-        "نحت الجسم",
-        "ليزر",
-        "حقن",
-        "تقشير"
-      ],
-      "socialMedia": {
-        "facebook": "https://facebook.com/inshape"
-      },
-      "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=InShape+Clinic"
-    },
-    {
-      "id": "clinic-006",
-      "name": "إيدن سكين",
-      "nameEn": "Eden Skin Clinic",
-      "specialty": "جلدية",
-      "specialtyEn": "dermatology",
-      "city": "القاهرة",
-      "cityEn": "cairo",
-      "district": "مصر الجديدة",
-      "address": "مصر الجديدة، القاهرة",
-      "phone": "01221111626",
-      "phone2": "",
-      "website": "",
-      "googleRating": 4.4,
-      "googleReviews": 140,
-      "description": "عيادة متخصصة في العناية بالبشرة والعلاجات الجلدية",
-      "services": [
-        "عناية بالبشرة",
-        "ليزر",
-        "تقشير",
-        "حقن"
-      ],
-      "socialMedia": {
-        "facebook": "https://facebook.com/edenskin",
-        "instagram": "https://instagram.com/edenskin"
-      },
-      "category": "B",
-      "image": "https://via.placeholder.com/400x300?text=Eden+Skin+Clinic"
-    },
-    {
-      "id": "clinic-007",
-      "name": "كوزمو ليزر",
-      "nameEn": "Cosmo Laser",
-      "specialty": "ليزر",
-      "specialtyEn": "laser",
-      "city": "القاهرة",
-      "cityEn": "cairo",
-      "district": "مدينة نصر",
-      "address": "مدينة نصر، القاهرة",
-      "phone": "01021111626",
-      "phone2": "",
-      "website": "",
-      "googleRating": 4.7,
-      "googleReviews": 190,
-      "description": "مركز متخصص في علاجات الليزر المتقدمة",
-      "services": [
-        "إزالة الشعر بالليزر",
-        "تقشير الجلد",
-        "إزالة الوشم",
-        "علاج حب الشباب"
-      ],
-      "socialMedia": {},
-      "category": "B",
-      "image": "https://via.placeholder.com/400x300?text=Cosmo+Laser"
-    },
-    {
-      "id": "clinic-008",
-      "name": "عيادات ماجستي",
-      "nameEn": "Majesty",
-      "specialty": "تجميل",
-      "specialtyEn": "cosmetics",
-      "city": "الجيزة",
-      "cityEn": "giza",
-      "district": "أكتوبر",
-      "address": "6 أكتوبر، الجيزة",
-      "phone": "16593",
-      "phone2": "",
-      "website": "",
-      "googleRating": 4.3,
       "googleReviews": 120,
-      "description": "عيادة متخصصة في جراحات التجميل والعناية",
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
       "services": [
-        "جراحات تجميل",
-        "ليزر",
-        "حقن",
-        "تقشير"
-      ],
-      "socialMedia": {},
-      "category": "B",
-      "image": "https://via.placeholder.com/400x300?text=Majesty+Clinic"
-    },
-    {
-      "id": "clinic-009",
-      "name": "لا جراس",
-      "nameEn": "La Grace",
-      "specialty": "تجميل",
-      "specialtyEn": "cosmetics",
-      "city": "القاهرة",
-      "cityEn": "cairo",
-      "district": "التجمع الخامس",
-      "address": "التجمع الخامس، القاهرة",
-      "phone": "01026444401",
-      "phone2": "",
-      "website": "",
-      "googleRating": 4.6,
-      "googleReviews": 170,
-      "description": "عيادة متخصصة في التجميل والعناية بالبشرة",
-      "services": [
-        "جراحات تجميل",
-        "ليزر",
-        "حقن",
-        "تقشير"
-      ],
-      "socialMedia": {},
-      "category": "B",
-      "image": "https://via.placeholder.com/400x300?text=La+Grace"
-    },
-    {
-      "id": "clinic-010",
-      "name": "جوزيل كلينك",
-      "nameEn": "Gozel",
-      "specialty": "تجميل",
-      "specialtyEn": "cosmetics",
-      "city": "الجيزة",
-      "cityEn": "giza",
-      "district": "الشيخ زايد",
-      "address": "الشيخ زايد، الجيزة",
-      "phone": "01200022242",
-      "phone2": "",
-      "website": "",
-      "googleRating": 4.5,
-      "googleReviews": 150,
-      "description": "مركز متخصص في التجميل والعناية بالبشرة",
-      "services": [
-        "جراحات تجميل",
-        "ليزر",
-        "حقن",
-        "تقشير"
-      ],
-      "socialMedia": {},
-      "category": "B",
-      "image": "https://via.placeholder.com/400x300?text=Gozel+Clinic"
-    },
-    {
-      "id": "clinic-011",
-      "name": "عيادة باربي",
-      "nameEn": "Barbie Clinic",
-      "specialty": "تجميل",
-      "specialtyEn": "cosmetics",
-      "city": "الجيزة",
-      "cityEn": "giza",
-      "district": "6 أكتوبر",
-      "address": "6 أكتوبر، الجيزة",
-      "phone": "01114445368",
-      "phone2": "",
-      "website": "",
-      "googleRating": 4.2,
-      "googleReviews": 100,
-      "description": "عيادة متخصصة في التجميل والعناية",
-      "services": [
-        "جراحات تجميل",
-        "ليزر",
-        "حقن"
-      ],
-      "socialMedia": {},
-      "category": "B",
-      "image": "https://via.placeholder.com/400x300?text=Barbie+Clinic"
-    },
-    {
-      "id": "clinic-012",
-      "name": "ديرما كير",
-      "nameEn": "Derma Care",
-      "specialty": "جلدية",
-      "specialtyEn": "dermatology",
-      "city": "القاهرة",
-      "cityEn": "cairo",
-      "district": "مدينة نصر",
-      "address": "مدينة نصر، القاهرة",
-      "phone": "01000766322",
-      "phone2": "",
-      "website": "",
-      "googleRating": 4.6,
-      "googleReviews": 160,
-      "description": "عيادة متخصصة في الأمراض الجلدية والعناية",
-      "services": [
-        "أمراض جلدية",
-        "ليزر",
-        "تقشير",
-        "حقن"
-      ],
-      "socialMedia": {},
-      "category": "B",
-      "image": "https://via.placeholder.com/400x300?text=Derma+Care"
-    },
-    {
-      "id": "clinic-013",
-      "name": "ريفيفا كلينك",
-      "nameEn": "Reviva",
-      "specialty": "تجميل",
-      "specialtyEn": "cosmetics",
-      "city": "القاهرة",
-      "cityEn": "cairo",
-      "district": "الدقي",
-      "address": "الدقي، القاهرة",
-      "phone": "01111114510",
-      "phone2": "",
-      "website": "",
-      "googleRating": 4.4,
-      "googleReviews": 130,
-      "description": "مركز متخصص في تجديد الشباب والتجميل",
-      "services": [
-        "جراحات تجميل",
-        "ليزر",
-        "حقن",
-        "تقشير"
-      ],
-      "socialMedia": {},
-      "category": "B",
-      "image": "https://via.placeholder.com/400x300?text=Reviva+Clinic"
-    },
-    {
-      "id": "clinic-014",
-      "name": "عيادات تجميل",
-      "nameEn": "Tagmeel Clinic",
-      "specialty": "تجميل",
-      "specialtyEn": "cosmetics",
-      "city": "القاهرة",
-      "cityEn": "cairo",
-      "district": "التجمع الخامس",
-      "address": "التجمع الخامس، القاهرة",
-      "phone": "01227000212",
-      "phone2": "",
-      "website": "",
-      "googleRating": 4.7,
-      "googleReviews": 200,
-      "description": "عيادة متخصصة في جراحات التجميل الحديثة",
-      "services": [
-        "جراحات تجميل",
-        "ليزر",
-        "حقن",
-        "تقشير"
-      ],
-      "socialMedia": {
-        "facebook": "https://facebook.com/tagmeelclinic"
-      },
-      "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Tagmeel+Clinic"
-    },
-    {
-      "id": "clinic-015",
-      "name": "مركز كليوباترا للتجميل",
-      "nameEn": "Cleopatra Beauty Center",
-      "specialty": "تجميل",
-      "specialtyEn": "cosmetics",
-      "city": "الجيزة",
-      "cityEn": "giza",
-      "district": "الهرم",
-      "address": "الهرم، الجيزة",
-      "phone": "01224444141",
-      "phone2": "",
-      "website": "https://cleopatra-beauty.com",
-      "googleRating": 4.8,
-      "googleReviews": 250,
-      "description": "مركز متخصص في التجميل والعناية بالبشرة",
-      "services": [
-        "جراحات تجميل",
-        "ليزر",
-        "حقن",
-        "تقشير"
+        "تجميل الوجه",
+        "ليزر بشرة"
       ],
       "socialMedia": {},
       "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Cleopatra+Beauty"
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
     },
     {
-      "id": "clinic-016",
-      "name": "شايني وايت",
-      "nameEn": "Shiny White",
-      "specialty": "جلدية وتجميل",
-      "specialtyEn": "dermatology-cosmetics",
-      "city": "القاهرة",
-      "cityEn": "cairo",
-      "district": "مدينة نصر",
-      "address": "مدينة نصر، القاهرة",
-      "phone": "01100115000",
-      "phone2": "",
-      "website": "",
-      "googleRating": 4.7,
-      "googleReviews": 210,
-      "description": "عيادة متخصصة في الجلدية والتجميل",
-      "services": [
-        "أمراض جلدية",
-        "ليزر",
-        "تقشير",
-        "حقن"
-      ],
-      "socialMedia": {
-        "whatsapp": "01100115000"
-      },
-      "category": "B",
-      "image": "https://via.placeholder.com/400x300?text=Shiny+White"
-    },
-    {
-      "id": "clinic-017",
-      "name": "عيادات كوينز",
-      "nameEn": "Queens Clinic",
+      "id": "clinic-2",
+      "name": "عيادة النيل للتجميل",
       "specialty": "تجميل",
-      "specialtyEn": "cosmetics",
       "city": "القاهرة",
-      "cityEn": "cairo",
-      "district": "مصر الجديدة",
-      "address": "مصر الجديدة، القاهرة",
-      "phone": "01016666367",
-      "phone2": "",
-      "website": "",
-      "googleRating": 4.5,
-      "googleReviews": 140,
-      "description": "عيادة متخصصة في التجميل والعناية",
-      "services": [
-        "جراحات تجميل",
-        "ليزر",
-        "حقن",
-        "تقشير"
-      ],
-      "socialMedia": {
-        "whatsapp": "01016666367"
-      },
-      "category": "B",
-      "image": "https://via.placeholder.com/400x300?text=Queens+Clinic"
-    },
-    {
-      "id": "clinic-018",
-      "name": "مركز جلو",
-      "nameEn": "Glow Clinic",
-      "specialty": "تجميل",
-      "specialtyEn": "cosmetics",
-      "city": "الجيزة",
-      "cityEn": "giza",
-      "district": "الشيخ زايد",
-      "address": "الشيخ زايد، الجيزة",
-      "phone": "01144400262",
-      "phone2": "",
-      "website": "",
-      "googleRating": 4.6,
-      "googleReviews": 170,
-      "description": "مركز متخصص في التجميل والعناية",
-      "services": [
-        "جراحات تجميل",
-        "ليزر",
-        "حقن",
-        "تقشير"
-      ],
-      "socialMedia": {
-        "whatsapp": "01144400262"
-      },
-      "category": "B",
-      "image": "https://via.placeholder.com/400x300?text=Glow+Clinic"
-    },
-    {
-      "id": "clinic-019",
-      "name": "عيادة د. ريهام الشاذلي",
-      "nameEn": "Dr. Reham Al-Shazly Clinic",
-      "specialty": "جلدية وتجميل",
-      "specialtyEn": "dermatology-cosmetics",
-      "city": "القاهرة",
-      "cityEn": "cairo",
-      "district": "المعادي",
-      "address": "المعادي، القاهرة",
-      "phone": "01000600125",
-      "phone2": "",
-      "website": "",
-      "googleRating": 4.8,
-      "googleReviews": 220,
-      "description": "عيادة متخصصة في الجلدية والتجميل",
-      "services": [
-        "أمراض جلدية",
-        "ليزر",
-        "تقشير",
-        "حقن"
-      ],
-      "socialMedia": {
-        "whatsapp": "01000600125"
-      },
-      "category": "B",
-      "image": "https://via.placeholder.com/400x300?text=Dr+Reham+Clinic"
-    },
-    {
-      "id": "clinic-020",
-      "name": "مركز فيوليت",
-      "nameEn": "Violet Clinic",
-      "specialty": "تجميل",
-      "specialtyEn": "cosmetics",
-      "city": "القاهرة",
-      "cityEn": "cairo",
-      "district": "التجمع الخامس",
-      "address": "التجمع الخامس، القاهرة",
-      "phone": "01022214441",
-      "phone2": "",
-      "website": "",
-      "googleRating": 4.4,
+      "district": "",
+      "address": "",
+      "phone": "01012345678, 0233445566",
+      "googleRating": 4.9,
       "googleReviews": 120,
-      "description": "مركز متخصص في التجميل والعناية",
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
       "services": [
-        "جراحات تجميل",
-        "ليزر",
-        "حقن",
-        "تقشير"
+        "تجميل الوجه",
+        "ليزر بشرة"
       ],
-      "socialMedia": {
-        "whatsapp": "01022214441"
-      },
-      "category": "B",
-      "image": "https://via.placeholder.com/400x300?text=Violet+Clinic"
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
     },
     {
-      "id": "clinic-in-shape-clinic",
-      "name": "In Shape Clinic",
-      "nameEn": "In Shape Clinic",
-      "specialty": "تجميل ونحت جسم",
-      "specialtyEn": "تجميل",
-      "city": "التجمع الخامس",
-      "cityEn": "التجمع الخامس",
-      "district": "التجمع الخامس",
-      "address": "التجمع الخامس (أكثر من فرع)",
+      "id": "clinic-3",
+      "name": "مركز التجميل الحديث",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "",
+      "phone": "01555667788",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-4",
+      "name": "Cairo Cosmo Center",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "11 ش الأديب علي أدهم، مصر الجديدة",
+      "phone": "0222663622",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-5",
+      "name": "Dr. Emad Farag",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "3 ش المعهد الاشتراكي، مصر الجديدة",
+      "phone": "01022229115",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-6",
+      "name": "Kadah Clinic",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "10 ش النزهة، مصر الجديدة",
+      "phone": "01022221208",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-7",
+      "name": "Magenta Clinique",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "X76W+F2، مصر الجديدة",
+      "phone": "01289311010",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-8",
+      "name": "Amina Khalil",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "47 ش النزهة، مصر الجديدة",
+      "phone": "011110114315",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-9",
+      "name": "Willing Center",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "288 ش جمال عبد الناصر، جسر السويس",
+      "phone": "01149008834",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-10",
+      "name": "Better Life Clinics",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "100 أ ش جسر السويس، الألف مسكن",
+      "phone": "01111117900",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-11",
+      "name": "Odella beauty clinic",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "جسر السويس، فوق بنك الإسكان",
+      "phone": "01555210317",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-12",
+      "name": "Nadosh Clinic",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "105 ش العباسية، القاهرة",
+      "phone": "01020726719",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-13",
+      "name": "BAA Clinic",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "جسر السويس، ميدان الألف مسكن",
+      "phone": "01147161210",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-14",
+      "name": "Platinum Clinics",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "34 أ ش الحجاز، مصر الجديدة",
+      "phone": "01044437797",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-15",
+      "name": "Livia Clinic",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "ش الفيوم، برج الأطباء، مصر الجديدة",
+      "phone": "-",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-16",
+      "name": "Med Art Clinic",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "12 ش بطرس غالي، روكسي",
+      "phone": "01024684361",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-17",
+      "name": "Rama ElAzaizy",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "116 جسر السويس",
+      "phone": "01007722001",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-18",
+      "name": "Divine Cosmetics",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "6 ش محمود حافظ، ميدان سفير، مصر الجديدة",
+      "phone": "01141467214",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-19",
+      "name": "عيادات د. أسماء عبد الفتاح",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "1 أنقرة، امتداد شارع البحر، كايرو كومبليكس مول، مساكن الشيراتون",
+      "phone": "01006514172",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-20",
+      "name": "Delta Derm Clinic",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "1 ش مركز المعلومات، مربع الوزراء، مساكن شيراتون",
+      "phone": "01003555737",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-21",
+      "name": "مول النزهة (عيادة تجميل)",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "ش جسر السويس، مول النزهة، بجانب محطة مترو هشام بركات",
+      "phone": "01112888112",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-22",
+      "name": "أميرولا كلينيك (Amirola)",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "14 ميدان الألف مسكن، جسر السويس",
+      "phone": "01223858589",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-23",
+      "name": "عيادة (7 ش جسر السويس - منشية البكري)",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "7 ش جسر السويس، منشية البكري، القاهرة",
+      "phone": "0222570586",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-24",
+      "name": "د. كامل حسين كامل",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "61 ش مصر والسودان، حدائق القبة",
+      "phone": "0224820352",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-25",
+      "name": "عيادة (12 أ جسر السويس)",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "12 أ جسر السويس، أمام بوابة 4 نادي الشمس",
+      "phone": "01014116238",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-26",
+      "name": "Al Farida Center",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "39 ميدان ابن الحكم، حلمية الزيتون",
+      "phone": "01207363636",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-27",
+      "name": "4Team Beauty Center",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "17 ش صعب صالح، عين شمس الشرقية",
+      "phone": "01122243588",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-28",
+      "name": "د. عمرو مبروك",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "عين شمس (Live Clinic)",
+      "phone": "01228382276",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-29",
+      "name": "مركز ابن سينا",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "83 ش صعب صالح، عين شمس",
+      "phone": "01288166990",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-30",
+      "name": "Timo Clinic",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "44 ش المطرية العمومي، فوق شركة النيل للكاوتش",
+      "phone": "01033406054",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-31",
+      "name": "Jamaly Laser Center",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "المطرية (فرع)",
+      "phone": "01020214601",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-32",
+      "name": "د. علياء السقا",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "المطرية (فرع)",
+      "phone": "01007968413",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-33",
+      "name": "عيادة (برج منارة الزيتون)",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "115 ش سليم الأول، حلمية الزيتون، الدور 1",
+      "phone": "0923039505",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-34",
+      "name": "مركز كوين لاينز (Queen Lines)",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "60 ش الخليفة المأمون، برج كوين سنتر، الدور 8",
+      "phone": "0222583050",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-35",
+      "name": "د. أحمد صابر بركات",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "مصر الجديدة (فرع)",
+      "phone": "01005356086",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-36",
+      "name": "بريتي وومان (Pretty Woman)",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "115 ش سليم الأول، برج منارة الزيتون، الدور 1",
+      "phone": "01505706457",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-37",
+      "name": "مركز عيادات وومان (Woman Clinic)",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "ريحانة ريزيدنس، الشطر الأول، الدور الأول، زهراء المعادي",
+      "phone": "16208",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-38",
+      "name": "عيادة د. ندى عبد الستار",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "برج الندى (عمارة فودافون)، أمام Hub 50، الدور الأول، زهراء المعادي",
+      "phone": "01011081331",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-39",
+      "name": "عيادة د. أشرف أبو الفتوح خليل",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "برج إيليت الطبي، زهراء المعادي",
+      "phone": "01014199440",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-40",
+      "name": "عيادة د. خلود المصلحي",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "برج الكوثر، زهراء المعادي",
+      "phone": "01108326164",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-41",
+      "name": "عيادة د. أميرة صلاح",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "برج المنصور، أمام Hub 50، زهراء المعادي",
+      "phone": "01011343922",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-42",
+      "name": "مركز المعادي للأمراض الجلدية",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "45 شارع 9، حدائق المعادي",
+      "phone": "0223807572",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-43",
+      "name": "عيادة د. سامح فايق",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "حدائق المعادي",
+      "phone": "01228591892",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-44",
+      "name": "عيادة د. إيمان سند",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "حدائق المعادي",
+      "phone": "01118519978",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-45",
+      "name": "عيادة د. مها عزت ود. ياسر جوهري",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "ثكنات المعادي",
+      "phone": "01111848999",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-46",
+      "name": "عيادة د. هاني نبيل (InShape)",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "دجلة، المعادي",
       "phone": "16322",
-      "googleRating": 4.5,
-      "googleReviews": 50,
-      "description": "عيادة متخصصة في تجميل ونحت جسم في التجمع الخامس",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
       "services": [
-        "تجميل ونحت جسم"
+        "تجميل الوجه",
+        "ليزر بشرة"
       ],
       "socialMedia": {},
       "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Clinic"
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
     },
     {
-      "id": "clinic-mahy-clinic",
-      "name": "Mahy Clinic",
-      "nameEn": "Mahy Clinic",
+      "id": "clinic-47",
+      "name": "عيادة د. وسيم السيسي",
       "specialty": "تجميل",
-      "specialtyEn": "تجميل",
-      "city": "التجمع الخامس",
-      "cityEn": "التجمع الخامس",
-      "district": "التجمع الخامس",
-      "address": "ميديكال بارك 1 & اليجانتري",
-      "phone": "01055031310",
-      "googleRating": 4.5,
-      "googleReviews": 50,
-      "description": "عيادة متخصصة في تجميل في التجمع الخامس",
+      "city": "القاهرة",
+      "district": "",
+      "address": "ميدان الحرية، المعادي",
+      "phone": "25254872",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
       "services": [
-        "تجميل"
+        "تجميل الوجه",
+        "ليزر بشرة"
       ],
       "socialMedia": {},
       "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Clinic"
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
     },
     {
-      "id": "clinic-dr--heba-darwish",
-      "name": "Dr. Heba Darwish",
-      "nameEn": "Dr. Heba Darwish",
+      "id": "clinic-48",
+      "name": "دايموند كلينك (Diamond Clinic)",
       "specialty": "تجميل",
-      "specialtyEn": "تجميل",
-      "city": "التجمع الخامس",
-      "cityEn": "التجمع الخامس",
-      "district": "التجمع الخامس",
-      "address": "Elegantry Mall",
-      "phone": "01030272501",
-      "googleRating": 4.5,
-      "googleReviews": 50,
-      "description": "عيادة متخصصة في تجميل في التجمع الخامس",
+      "city": "القاهرة",
+      "district": "",
+      "address": "114 شارع فيصل الرئيسي، أمام ماكدونالدز",
+      "phone": "01204675911",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
       "services": [
-        "تجميل"
+        "تجميل الوجه",
+        "ليزر بشرة"
       ],
       "socialMedia": {},
       "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Clinic"
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
     },
     {
-      "id": "clinic-dr--wael-mansour",
-      "name": "Dr. Wael Mansour",
-      "nameEn": "Dr. Wael Mansour",
+      "id": "clinic-49",
+      "name": "سيلا كلينيك (Silla Clinic)",
       "specialty": "تجميل",
-      "specialtyEn": "تجميل",
-      "city": "التجمع الخامس",
-      "cityEn": "التجمع الخامس",
-      "district": "التجمع الخامس",
-      "address": "التجمع الخامس",
-      "phone": "-",
-      "googleRating": 4.5,
-      "googleReviews": 50,
-      "description": "عيادة متخصصة في تجميل في التجمع الخامس",
+      "city": "القاهرة",
+      "district": "",
+      "address": "شارع خاتم المرسلين، عمارة بشبش",
+      "phone": "01111834903",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
       "services": [
-        "تجميل"
+        "تجميل الوجه",
+        "ليزر بشرة"
       ],
       "socialMedia": {},
       "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Clinic"
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
     },
     {
-      "id": "clinic-dr--mohamed-fakher",
-      "name": "Dr. Mohamed Fakher",
-      "nameEn": "Dr. Mohamed Fakher",
-      "specialty": "جراحة تجميل",
-      "specialtyEn": "تجميل",
-      "city": "التجمع الخامس",
-      "cityEn": "التجمع الخامس",
-      "district": "التجمع الخامس",
-      "address": "التجمع الخامس",
-      "phone": "-",
-      "googleRating": 4.5,
-      "googleReviews": 50,
-      "description": "عيادة متخصصة في جراحة تجميل في التجمع الخامس",
-      "services": [
-        "جراحة تجميل"
-      ],
-      "socialMedia": {},
-      "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Clinic"
-    },
-    {
-      "id": "clinic-lamoda-center",
-      "name": "LaModa Center",
-      "nameEn": "LaModa Center",
+      "id": "clinic-50",
+      "name": "ريجوفا بيوتي كلينك",
       "specialty": "تجميل",
-      "specialtyEn": "تجميل",
-      "city": "التجمع الخامس",
-      "cityEn": "التجمع الخامس",
-      "district": "التجمع الخامس",
-      "address": "التجمع الخامس",
-      "phone": "-",
-      "googleRating": 4.5,
-      "googleReviews": 50,
-      "description": "عيادة متخصصة في تجميل في التجمع الخامس",
+      "city": "القاهرة",
+      "district": "",
+      "address": "271 ش فيصل، المطبعة",
+      "phone": "01112657581",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
       "services": [
-        "تجميل"
+        "تجميل الوجه",
+        "ليزر بشرة"
       ],
       "socialMedia": {},
       "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Clinic"
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
     },
     {
-      "id": "clinic-queens-clinics",
-      "name": "Queens Clinics",
-      "nameEn": "Queens Clinics",
-      "specialty": "جراحة تجميل وجلدية",
-      "specialtyEn": "تجميل",
-      "city": "التجمع الخامس",
-      "cityEn": "التجمع الخامس",
-      "district": "التجمع الخامس",
-      "address": "مول الحمد بلازا، أعلى كارفور",
-      "phone": "01204087831",
-      "googleRating": 4.5,
-      "googleReviews": 50,
-      "description": "عيادة متخصصة في جراحة تجميل وجلدية في التجمع الخامس",
-      "services": [
-        "جراحة تجميل وجلدية"
-      ],
-      "socialMedia": {},
-      "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Clinic"
-    },
-    {
-      "id": "clinic-dr--amr-kaddah",
-      "name": "Dr. Amr Kaddah",
-      "nameEn": "Dr. Amr Kaddah",
-      "specialty": "جلدية وتجميل",
-      "specialtyEn": "تجميل",
-      "city": "التجمع الخامس",
-      "cityEn": "التجمع الخامس",
-      "district": "التجمع الخامس",
-      "address": "التجمع الخامس",
-      "phone": "-",
-      "googleRating": 4.5,
-      "googleReviews": 50,
-      "description": "عيادة متخصصة في جلدية وتجميل في التجمع الخامس",
-      "services": [
-        "جلدية وتجميل"
-      ],
-      "socialMedia": {},
-      "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Clinic"
-    },
-    {
-      "id": "clinic-ke-clinics",
-      "name": "Ke Clinics",
-      "nameEn": "Ke Clinics",
+      "id": "clinic-51",
+      "name": "عيادات زينه التخصصية (Zeina Clinics)",
       "specialty": "تجميل",
-      "specialtyEn": "تجميل",
-      "city": "التجمع الخامس",
-      "cityEn": "التجمع الخامس",
-      "district": "التجمع الخامس",
-      "address": "التجمع الخامس",
-      "phone": "-",
-      "googleRating": 4.5,
-      "googleReviews": 50,
-      "description": "عيادة متخصصة في تجميل في التجمع الخامس",
+      "city": "القاهرة",
+      "district": "",
+      "address": "26 ش شريف تقاطع قصر النيل، فوق كافيه كوستا",
+      "phone": "01559491877",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
       "services": [
-        "تجميل"
+        "تجميل الوجه",
+        "ليزر بشرة"
       ],
       "socialMedia": {},
       "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Clinic"
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
     },
     {
-      "id": "clinic-عيادات-إدراك-التخصصية",
-      "name": "عيادات إدراك التخصصية",
-      "nameEn": "عيادات إدراك التخصصية",
-      "specialty": "جلدية",
-      "specialtyEn": "تجميل",
-      "city": "التجمع الخامس",
-      "cityEn": "التجمع الخامس",
-      "district": "التجمع الخامس",
-      "address": "شارع 15",
+      "id": "clinic-52",
+      "name": "عيادة د. إبراهيم إسماعيل (وسط البلد)",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "وسط البلد، القاهرة",
+      "phone": "0483679888",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-53",
+      "name": "بلوم سكين كلينك (Bloom)",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "شارع المنيل الرئيسي",
+      "phone": "01029992050",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-54",
+      "name": "عيادة جليلة (Jameela Clinic)",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "107 عبد السلام عارف، جليم",
+      "phone": "035839483",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-55",
+      "name": "مركز جليم للتجميل",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "89 ش عبد السلام عارف، الدور 2، جليم",
+      "phone": "01008851055",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-56",
+      "name": "ديرما شاين كلينيك (د. عائشة ربيع)",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "6 ش الإسماعيلية، كفر عبده",
+      "phone": "01277443818",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-57",
+      "name": "مركز عناية الطبي (Enaya)",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "المنتزه، الإسكندرية",
+      "phone": "01288775909",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-58",
+      "name": "عيادة نوفيلو (Novello Clinic)",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "الهانوفيل الرئيسي، أمام مدرسة العجمي النموذجية",
+      "phone": "01279924374",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-59",
+      "name": "د. مريم عبد العزيز",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "أبو يوسف، ش الحديد والصلب، العجمي",
+      "phone": "01200506765",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-60",
+      "name": "تولاج كلينيك (Tolaj Clinic)",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "4 ش فوزي معاذ، أمام قباني، سموحة",
+      "phone": "01557117360",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-61",
+      "name": "عيادات نتوياج (Nettoyage)",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "74 ش ألبرت الأول، أبراج البارون، سموحة",
+      "phone": "01200038434",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-62",
+      "name": "عيادة تجميل مميزة",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "المستثمرين الجنوبية - طيبة هايتس",
       "phone": "01009000378",
-      "googleRating": 4.5,
-      "googleReviews": 50,
-      "description": "عيادة متخصصة في جلدية في التجمع الخامس",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
       "services": [
-        "جلدية"
+        "تجميل الوجه",
+        "ليزر بشرة"
       ],
       "socialMedia": {},
       "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Clinic"
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
     },
     {
-      "id": "clinic-عيادة-التجميل-الحديثة",
-      "name": "عيادة التجميل الحديثة",
-      "nameEn": "عيادة التجميل الحديثة",
-      "specialty": "تجميل وجلدية",
-      "specialtyEn": "تجميل وجلدية",
-      "city": "6 أكتوبر",
-      "cityEn": "6 أكتوبر",
-      "district": "6 أكتوبر",
-      "address": "حدائق أكتوبر - المنطقة الثانية - عمارة 45",
-      "phone": "01200000000",
-      "googleRating": 4.5,
-      "googleReviews": 50,
-      "description": "عيادة متخصصة في تجميل وجلدية في 6 أكتوبر",
+      "id": "clinic-63",
+      "name": "Juvia Clinic",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "5/6G شارع اللاسلكي، الدور 12، المعادي الجديدة",
+      "phone": "01111111111",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
       "services": [
-        "تجميل وجلدية"
+        "تجميل الوجه",
+        "ليزر بشرة"
       ],
       "socialMedia": {},
       "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Clinic"
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
     },
     {
-      "id": "clinic-عيادة-د--ياسمين-تجميل",
-      "name": "عيادة د. ياسمين تجميل",
-      "nameEn": "عيادة د. ياسمين تجميل",
-      "specialty": "تجميل وجلدية",
-      "specialtyEn": "تجميل وجلدية",
-      "city": "6 أكتوبر",
-      "cityEn": "6 أكتوبر",
-      "district": "6 أكتوبر",
-      "address": "حدائق أكتوبر - ابني بيتك - المنطقة الأولى",
-      "phone": "01100002222",
-      "googleRating": 4.5,
-      "googleReviews": 50,
-      "description": "عيادة متخصصة في تجميل وجلدية في 6 أكتوبر",
+      "id": "clinic-64",
+      "name": "Jamaly Laser & Esthetic Center",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "المعادي",
+      "phone": "01022626578",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
       "services": [
-        "تجميل وجلدية"
+        "تجميل الوجه",
+        "ليزر بشرة"
       ],
       "socialMedia": {},
       "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Clinic"
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
     },
     {
-      "id": "clinic-عيادة-د--سارة-جلدية",
-      "name": "عيادة د. سارة جلدية",
-      "nameEn": "عيادة د. سارة جلدية",
-      "specialty": "تجميل وجلدية",
-      "specialtyEn": "تجميل وجلدية",
-      "city": "6 أكتوبر",
-      "cityEn": "6 أكتوبر",
-      "district": "6 أكتوبر",
-      "address": "حدائق أكتوبر - كمبوند دجلة جاردنز",
-      "phone": "01200006666",
-      "googleRating": 4.5,
-      "googleReviews": 50,
-      "description": "عيادة متخصصة في تجميل وجلدية في 6 أكتوبر",
+      "id": "clinic-65",
+      "name": "Trust Clinics",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "المعادي",
+      "phone": "01030035600",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
       "services": [
-        "تجميل وجلدية"
+        "تجميل الوجه",
+        "ليزر بشرة"
       ],
       "socialMedia": {},
       "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Clinic"
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
     },
     {
-      "id": "clinic-د--رانيا-تجميل-وليزر",
-      "name": "د. رانيا تجميل وليزر",
-      "nameEn": "د. رانيا تجميل وليزر",
-      "specialty": "تجميل وجلدية",
-      "specialtyEn": "تجميل وجلدية",
-      "city": "6 أكتوبر",
-      "cityEn": "6 أكتوبر",
-      "district": "6 أكتوبر",
-      "address": "6 أكتوبر - الحي الحادي عشر - مول طيبة",
-      "phone": "01100008888",
-      "googleRating": 4.5,
-      "googleReviews": 50,
-      "description": "عيادة متخصصة في تجميل وجلدية في 6 أكتوبر",
+      "id": "clinic-66",
+      "name": "د. سامي سهيل صوان",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "المعادي",
+      "phone": "01070001644",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
       "services": [
-        "تجميل وجلدية"
+        "تجميل الوجه",
+        "ليزر بشرة"
       ],
       "socialMedia": {},
       "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Clinic"
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
     },
     {
-      "id": "clinic-مركز-ليزر-كوين",
-      "name": "مركز ليزر كوين",
-      "nameEn": "مركز ليزر كوين",
-      "specialty": "تجميل وجلدية",
-      "specialtyEn": "تجميل وجلدية",
-      "city": "6 أكتوبر",
-      "cityEn": "6 أكتوبر",
-      "district": "6 أكتوبر",
-      "address": "6 أكتوبر - الحي الثاني عشر - سنتر الوجيه",
-      "phone": "01122221234",
-      "googleRating": 4.5,
-      "googleReviews": 50,
-      "description": "عيادة متخصصة في تجميل وجلدية في 6 أكتوبر",
+      "id": "clinic-67",
+      "name": "د. أيمن نعمان",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "شارع 233، دجلة، المعادي",
+      "phone": "01201426088",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
       "services": [
-        "تجميل وجلدية"
+        "تجميل الوجه",
+        "ليزر بشرة"
       ],
       "socialMedia": {},
       "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Clinic"
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
     },
     {
-      "id": "clinic-د--إيمان-جلدية-وتجميل",
-      "name": "د. إيمان جلدية وتجميل",
-      "nameEn": "د. إيمان جلدية وتجميل",
-      "specialty": "تجميل وجلدية",
-      "specialtyEn": "تجميل وجلدية",
-      "city": "6 أكتوبر",
-      "cityEn": "6 أكتوبر",
-      "district": "6 أكتوبر",
-      "address": "6 أكتوبر - الحي السابع - سنتر الأردنية",
-      "phone": "01077770000",
-      "googleRating": 4.5,
-      "googleReviews": 50,
-      "description": "عيادة متخصصة في تجميل وجلدية في 6 أكتوبر",
+      "id": "clinic-68",
+      "name": "د. أحمد النابي",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "5/15 شارع النصر، المعادي الجديدة",
+      "phone": "01096666303",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
       "services": [
-        "تجميل وجلدية"
+        "تجميل الوجه",
+        "ليزر بشرة"
       ],
       "socialMedia": {},
       "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Clinic"
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
     },
     {
-      "id": "clinic-د--هاني-جراحة-تجميل",
-      "name": "د. هاني جراحة تجميل",
-      "nameEn": "د. هاني جراحة تجميل",
-      "specialty": "تجميل وجلدية",
-      "specialtyEn": "تجميل وجلدية",
-      "city": "6 أكتوبر",
-      "cityEn": "6 أكتوبر",
-      "district": "6 أكتوبر",
-      "address": "6 أكتوبر - الحي العاشر - سنتر الفيروز",
-      "phone": "01100001234",
-      "googleRating": 4.5,
-      "googleReviews": 50,
-      "description": "عيادة متخصصة في تجميل وجلدية في 6 أكتوبر",
+      "id": "clinic-69",
+      "name": "Transformers Elite Center",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "شارع 199، دجلة",
+      "phone": "01144448110",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
       "services": [
-        "تجميل وجلدية"
+        "تجميل الوجه",
+        "ليزر بشرة"
       ],
       "socialMedia": {},
       "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Clinic"
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
     },
     {
-      "id": "clinic-عيادة-د--ليلى-جلدية",
-      "name": "عيادة د. ليلى جلدية",
-      "nameEn": "عيادة د. ليلى جلدية",
-      "specialty": "تجميل وجلدية",
-      "specialtyEn": "تجميل وجلدية",
-      "city": "6 أكتوبر",
-      "cityEn": "6 أكتوبر",
-      "district": "6 أكتوبر",
-      "address": "حدائق أكتوبر - كمبوند بداية",
-      "phone": "01011111234",
-      "googleRating": 4.5,
-      "googleReviews": 50,
-      "description": "عيادة متخصصة في تجميل وجلدية في 6 أكتوبر",
+      "id": "clinic-70",
+      "name": "Nala Clinics",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "المعادي",
+      "phone": "01113554900",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
       "services": [
-        "تجميل وجلدية"
+        "تجميل الوجه",
+        "ليزر بشرة"
       ],
       "socialMedia": {},
       "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Clinic"
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
     },
     {
-      "id": "clinic-vedette-clinic--dr--jehan-yehia-",
-      "name": "Vedette Clinic (Dr. Jehan Yehia)",
-      "nameEn": "Vedette Clinic (Dr. Jehan Yehia)",
-      "specialty": "تجميل وجلدية",
-      "specialtyEn": "تجميل وجلدية",
-      "city": "6 أكتوبر",
-      "cityEn": "6 أكتوبر",
-      "district": "6 أكتوبر",
-      "address": "6 أكتوبر الحي السابع ميدان ماجده مبني بريما فيستا الطبي الدور الثالت",
-      "phone": "+20 10 12534051",
-      "googleRating": 4.5,
-      "googleReviews": 50,
-      "description": "عيادة متخصصة في تجميل وجلدية في 6 أكتوبر",
+      "id": "clinic-71",
+      "name": "د. مروة الشريف",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "المعادي",
+      "phone": "01503316331",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
       "services": [
-        "تجميل وجلدية"
+        "تجميل الوجه",
+        "ليزر بشرة"
       ],
       "socialMedia": {},
       "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Clinic"
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
     },
     {
-      "id": "clinic-د--منى-تجميل",
+      "id": "clinic-72",
+      "name": "Infinity Clinics",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "المعادي",
+      "phone": "01010710955",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-73",
+      "name": "Latifa Clinics",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "7/2 شارع النصر، المعادي",
+      "phone": "01155299075",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-74",
       "name": "د. منى تجميل",
-      "nameEn": "د. منى تجميل",
-      "specialty": "تجميل وجلدية",
-      "specialtyEn": "تجميل وجلدية",
-      "city": "6 أكتوبر",
-      "cityEn": "6 أكتوبر",
-      "district": "6 أكتوبر",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
       "address": "6 أكتوبر - الحي المتميز - بجوار رامو",
       "phone": "01011111111",
-      "googleRating": 4.5,
-      "googleReviews": 50,
-      "description": "عيادة متخصصة في تجميل وجلدية في 6 أكتوبر",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
       "services": [
-        "تجميل وجلدية"
+        "تجميل الوجه",
+        "ليزر بشرة"
       ],
       "socialMedia": {},
       "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Clinic"
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
     },
     {
-      "id": "new-In-Shape-Clinic-الت",
-      "name": "In Shape Clinic",
-      "nameEn": "In Shape Clinic",
-      "specialty": "تجميل ونحت جسم",
-      "specialtyEn": "تجميل",
-      "city": "التجمع الخامس",
-      "cityEn": "التجمع الخامس",
-      "district": "التجمع الخامس",
-      "address": "التجمع الخامس (أكثر من فرع)",
-      "phone": "16322",
-      "googleRating": 4.5,
-      "googleReviews": 50,
-      "description": "عيادة متخصصة في تجميل ونحت جسم في التجمع الخامس",
-      "services": [
-        "تجميل ونحت جسم"
-      ],
-      "socialMedia": {},
-      "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Clinic"
-    },
-    {
-      "id": "new-Mahy-Clinic-الت",
-      "name": "Mahy Clinic",
-      "nameEn": "Mahy Clinic",
+      "id": "clinic-75",
+      "name": "د. أحمد جراحة تجميل",
       "specialty": "تجميل",
-      "specialtyEn": "تجميل",
-      "city": "التجمع الخامس",
-      "cityEn": "التجمع الخامس",
-      "district": "التجمع الخامس",
-      "address": "ميديكال بارك 1 & اليجانتري",
-      "phone": "01055031310",
-      "googleRating": 4.5,
-      "googleReviews": 50,
-      "description": "عيادة متخصصة في تجميل في التجمع الخامس",
+      "city": "القاهرة",
+      "district": "",
+      "address": "6 أكتوبر - الحي السابع - أبراج علي الدين",
+      "phone": "01155555555",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
       "services": [
-        "تجميل"
+        "تجميل الوجه",
+        "ليزر بشرة"
       ],
       "socialMedia": {},
       "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Clinic"
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
     },
     {
-      "id": "new-Dr--Heba-Darwish-الت",
-      "name": "Dr. Heba Darwish",
-      "nameEn": "Dr. Heba Darwish",
+      "id": "clinic-76",
+      "name": "مركز الرشاقة والتجميل",
       "specialty": "تجميل",
-      "specialtyEn": "تجميل",
-      "city": "التجمع الخامس",
-      "cityEn": "التجمع الخامس",
-      "district": "التجمع الخامس",
-      "address": "Elegantry Mall",
-      "phone": "01030272501",
-      "googleRating": 4.5,
-      "googleReviews": 50,
-      "description": "عيادة متخصصة في تجميل في التجمع الخامس",
+      "city": "القاهرة",
+      "district": "",
+      "address": "6 أكتوبر - الحي الثاني - المحور المركزي",
+      "phone": "01266666666",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
       "services": [
-        "تجميل"
+        "تجميل الوجه",
+        "ليزر بشرة"
       ],
       "socialMedia": {},
       "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Clinic"
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
     },
     {
-      "id": "new-Dr--Wael-Mansour-الت",
-      "name": "Dr. Wael Mansour",
-      "nameEn": "Dr. Wael Mansour",
+      "id": "clinic-77",
+      "name": "مركز تجميل الرواد",
       "specialty": "تجميل",
-      "specialtyEn": "تجميل",
-      "city": "التجمع الخامس",
-      "cityEn": "التجمع الخامس",
-      "district": "التجمع الخامس",
-      "address": "التجمع الخامس",
-      "phone": "-",
-      "googleRating": 4.5,
-      "googleReviews": 50,
-      "description": "عيادة متخصصة في تجميل في التجمع الخامس",
+      "city": "القاهرة",
+      "district": "",
+      "address": "6 أكتوبر - المنطقة الصناعية - مجمع البنوك",
+      "phone": "01188888888",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
       "services": [
-        "تجميل"
+        "تجميل الوجه",
+        "ليزر بشرة"
       ],
       "socialMedia": {},
       "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Clinic"
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
     },
     {
-      "id": "new-Dr--Mohamed-Fakher-الت",
-      "name": "Dr. Mohamed Fakher",
-      "nameEn": "Dr. Mohamed Fakher",
-      "specialty": "جراحة تجميل",
-      "specialtyEn": "تجميل",
-      "city": "التجمع الخامس",
-      "cityEn": "التجمع الخامس",
-      "district": "التجمع الخامس",
-      "address": "التجمع الخامس",
-      "phone": "-",
-      "googleRating": 4.5,
-      "googleReviews": 9,
-      "description": "عيادة متخصصة في جراحة تجميل في التجمع الخامس",
-      "services": [
-        "جراحة تجميل"
-      ],
-      "socialMedia": {},
-      "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Clinic"
-    },
-    {
-      "id": "new-LaModa-Center-الت",
-      "name": "LaModa Center",
-      "nameEn": "LaModa Center",
+      "id": "clinic-78",
+      "name": "د. هبة جلدية وتجميل",
       "specialty": "تجميل",
-      "specialtyEn": "تجميل",
-      "city": "التجمع الخامس",
-      "cityEn": "التجمع الخامس",
-      "district": "التجمع الخامس",
-      "address": "التجمع الخامس",
-      "phone": "-",
-      "googleRating": 4.5,
-      "googleReviews": 50,
-      "description": "عيادة متخصصة في تجميل في التجمع الخامس",
+      "city": "القاهرة",
+      "district": "",
+      "address": "6 أكتوبر - الحي الثامن - سنتر النخيل",
+      "phone": "01299999999",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
       "services": [
-        "تجميل"
+        "تجميل الوجه",
+        "ليزر بشرة"
       ],
       "socialMedia": {},
       "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Clinic"
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
     },
     {
-      "id": "new-Queens-Clinics-الت",
-      "name": "Queens Clinics",
-      "nameEn": "Queens Clinics",
-      "specialty": "جراحة تجميل وجلدية",
-      "specialtyEn": "تجميل",
-      "city": "التجمع الخامس",
-      "cityEn": "التجمع الخامس",
-      "district": "التجمع الخامس",
-      "address": "مول الحمد بلازا، أعلى كارفور",
-      "phone": "01204087831",
-      "googleRating": 4.5,
-      "googleReviews": 3,
-      "description": "عيادة متخصصة في جراحة تجميل وجلدية في التجمع الخامس",
-      "services": [
-        "جراحة تجميل وجلدية"
-      ],
-      "socialMedia": {},
-      "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Clinic"
-    },
-    {
-      "id": "new-Dr--Amr-Kaddah-الت",
-      "name": "Dr. Amr Kaddah",
-      "nameEn": "Dr. Amr Kaddah",
-      "specialty": "جلدية وتجميل",
-      "specialtyEn": "تجميل",
-      "city": "التجمع الخامس",
-      "cityEn": "التجمع الخامس",
-      "district": "التجمع الخامس",
-      "address": "التجمع الخامس",
-      "phone": "-",
-      "googleRating": 4.5,
-      "googleReviews": 50,
-      "description": "عيادة متخصصة في جلدية وتجميل في التجمع الخامس",
-      "services": [
-        "جلدية وتجميل"
-      ],
-      "socialMedia": {},
-      "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Clinic"
-    },
-    {
-      "id": "new-Ke-Clinics-الت",
-      "name": "Ke Clinics",
-      "nameEn": "Ke Clinics",
-      "specialty": "تجميل",
-      "specialtyEn": "تجميل",
-      "city": "التجمع الخامس",
-      "cityEn": "التجمع الخامس",
-      "district": "التجمع الخامس",
-      "address": "التجمع الخامس",
-      "phone": "-",
-      "googleRating": 4.5,
-      "googleReviews": 50,
-      "description": "عيادة متخصصة في تجميل في التجمع الخامس",
-      "services": [
-        "تجميل"
-      ],
-      "socialMedia": {},
-      "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Clinic"
-    },
-    {
-      "id": "new-عيادات-إدراك-التخصصية-الت",
-      "name": "عيادات إدراك التخصصية",
-      "nameEn": "عيادات إدراك التخصصية",
-      "specialty": "جلدية",
-      "specialtyEn": "تجميل",
-      "city": "التجمع الخامس",
-      "cityEn": "التجمع الخامس",
-      "district": "التجمع الخامس",
-      "address": "شارع 15",
-      "phone": "01009000378",
-      "googleRating": 4.5,
-      "googleReviews": 113,
-      "description": "عيادة متخصصة في جلدية في التجمع الخامس",
-      "services": [
-        "جلدية"
-      ],
-      "socialMedia": {},
-      "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Clinic"
-    },
-    {
-      "id": "new-عيادة-التجميل-الحديثة-6 أ",
-      "name": "عيادة التجميل الحديثة",
-      "nameEn": "عيادة التجميل الحديثة",
-      "specialty": "تجميل وجلدية",
-      "specialtyEn": "تجميل وجلدية",
-      "city": "6 أكتوبر",
-      "cityEn": "6 أكتوبر",
-      "district": "6 أكتوبر",
-      "address": "حدائق أكتوبر - المنطقة الثانية - عمارة 45",
-      "phone": "01200000000",
-      "googleRating": 4.5,
-      "googleReviews": 34,
-      "description": "عيادة متخصصة في تجميل وجلدية في 6 أكتوبر",
-      "services": [
-        "تجميل وجلدية"
-      ],
-      "socialMedia": {},
-      "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Clinic"
-    },
-    {
-      "id": "new-عيادة-د--ياسمين-تجميل-6 أ",
+      "id": "clinic-79",
       "name": "عيادة د. ياسمين تجميل",
-      "nameEn": "عيادة د. ياسمين تجميل",
-      "specialty": "تجميل وجلدية",
-      "specialtyEn": "تجميل وجلدية",
-      "city": "6 أكتوبر",
-      "cityEn": "6 أكتوبر",
-      "district": "6 أكتوبر",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
       "address": "حدائق أكتوبر - ابني بيتك - المنطقة الأولى",
       "phone": "01100002222",
-      "googleRating": 4.5,
-      "googleReviews": 49,
-      "description": "عيادة متخصصة في تجميل وجلدية في 6 أكتوبر",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
       "services": [
-        "تجميل وجلدية"
+        "تجميل الوجه",
+        "ليزر بشرة"
       ],
       "socialMedia": {},
       "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Clinic"
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
     },
     {
-      "id": "new-عيادة-د--سارة-جلدية-6 أ",
-      "name": "عيادة د. سارة جلدية",
-      "nameEn": "عيادة د. سارة جلدية",
-      "specialty": "تجميل وجلدية",
-      "specialtyEn": "تجميل وجلدية",
-      "city": "6 أكتوبر",
-      "cityEn": "6 أكتوبر",
-      "district": "6 أكتوبر",
-      "address": "حدائق أكتوبر - كمبوند دجلة جاردنز",
-      "phone": "01200006666",
-      "googleRating": 4.5,
-      "googleReviews": 19,
-      "description": "عيادة متخصصة في تجميل وجلدية في 6 أكتوبر",
+      "id": "clinic-80",
+      "name": "مركز الشروق للتجميل",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "6 أكتوبر - الحي الرابع - المحور المركزي",
+      "phone": "01200003333",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
       "services": [
-        "تجميل وجلدية"
+        "تجميل الوجه",
+        "ليزر بشرة"
       ],
       "socialMedia": {},
       "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Clinic"
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
     },
     {
-      "id": "new-د--رانيا-تجميل-وليزر-6 أ",
+      "id": "clinic-81",
+      "name": "د. محمود جراحة تجميل",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "6 أكتوبر - الحي الخامس - سنتر المدينة",
+      "phone": "01000004444",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-82",
+      "name": "مركز تجميل الياسمين",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "6 أكتوبر - الحي التاسع - بجوار سيتي سكيب",
+      "phone": "01100005555",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-83",
       "name": "د. رانيا تجميل وليزر",
-      "nameEn": "د. رانيا تجميل وليزر",
-      "specialty": "تجميل وجلدية",
-      "specialtyEn": "تجميل وجلدية",
-      "city": "6 أكتوبر",
-      "cityEn": "6 أكتوبر",
-      "district": "6 أكتوبر",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
       "address": "6 أكتوبر - الحي الحادي عشر - مول طيبة",
       "phone": "01100008888",
-      "googleRating": 4.5,
-      "googleReviews": 45,
-      "description": "عيادة متخصصة في تجميل وجلدية في 6 أكتوبر",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
       "services": [
-        "تجميل وجلدية"
+        "تجميل الوجه",
+        "ليزر بشرة"
       ],
       "socialMedia": {},
       "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Clinic"
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
     },
     {
-      "id": "new-مركز-ليزر-كوين-6 أ",
-      "name": "مركز ليزر كوين",
-      "nameEn": "مركز ليزر كوين",
-      "specialty": "تجميل وجلدية",
-      "specialtyEn": "تجميل وجلدية",
-      "city": "6 أكتوبر",
-      "cityEn": "6 أكتوبر",
-      "district": "6 أكتوبر",
+      "id": "clinic-84",
+      "name": "مركز تجميل الفيروز",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
       "address": "6 أكتوبر - الحي الثاني عشر - سنتر الوجيه",
-      "phone": "01122221234",
-      "googleRating": 4.5,
-      "googleReviews": 25,
-      "description": "عيادة متخصصة في تجميل وجلدية في 6 أكتوبر",
+      "phone": "01200009999",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
       "services": [
-        "تجميل وجلدية"
+        "تجميل الوجه",
+        "ليزر بشرة"
       ],
       "socialMedia": {},
       "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Clinic"
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
     },
     {
-      "id": "new-د--إيمان-جلدية-وتجميل-6 أ",
+      "id": "clinic-85",
+      "name": "د. خالد جراحة تجميل",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "6 أكتوبر - الحي المتميز - مول سنترال",
+      "phone": "01233330000",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-86",
+      "name": "مركز تجميل اللؤلؤة",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "6 أكتوبر - الحي الثالث - سنتر الفتح",
+      "phone": "01044440000",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-87",
+      "name": "عيادة د. نورا تجميل",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "حدائق أكتوبر - سكن مصر - الـ 800 فدان",
+      "phone": "01155550000",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-88",
       "name": "د. إيمان جلدية وتجميل",
-      "nameEn": "د. إيمان جلدية وتجميل",
-      "specialty": "تجميل وجلدية",
-      "specialtyEn": "تجميل وجلدية",
-      "city": "6 أكتوبر",
-      "cityEn": "6 أكتوبر",
-      "district": "6 أكتوبر",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
       "address": "6 أكتوبر - الحي السابع - سنتر الأردنية",
       "phone": "01077770000",
-      "googleRating": 4.5,
-      "googleReviews": 8,
-      "description": "عيادة متخصصة في تجميل وجلدية في 6 أكتوبر",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
       "services": [
-        "تجميل وجلدية"
+        "تجميل الوجه",
+        "ليزر بشرة"
       ],
       "socialMedia": {},
       "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Clinic"
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
     },
     {
-      "id": "new-د--هاني-جراحة-تجميل-6 أ",
+      "id": "clinic-89",
+      "name": "مركز تجميل الأمل",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "6 أكتوبر - الحي الثامن - سنتر النخيل",
+      "phone": "01188880000",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-90",
+      "name": "عيادة د. دينا تجميل",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "حدائق أكتوبر - كمبوند المنتزه",
+      "phone": "01299990000",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-91",
       "name": "د. هاني جراحة تجميل",
-      "nameEn": "د. هاني جراحة تجميل",
-      "specialty": "تجميل وجلدية",
-      "specialtyEn": "تجميل وجلدية",
-      "city": "6 أكتوبر",
-      "cityEn": "6 أكتوبر",
-      "district": "6 أكتوبر",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
       "address": "6 أكتوبر - الحي العاشر - سنتر الفيروز",
       "phone": "01100001234",
-      "googleRating": 4.5,
-      "googleReviews": 8,
-      "description": "عيادة متخصصة في تجميل وجلدية في 6 أكتوبر",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
       "services": [
-        "تجميل وجلدية"
+        "تجميل الوجه",
+        "ليزر بشرة"
       ],
       "socialMedia": {},
       "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Clinic"
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
     },
     {
-      "id": "new-عيادة-د--ليلى-جلدية-6 أ",
-      "name": "عيادة د. ليلى جلدية",
-      "nameEn": "عيادة د. ليلى جلدية",
-      "specialty": "تجميل وجلدية",
-      "specialtyEn": "تجميل وجلدية",
-      "city": "6 أكتوبر",
-      "cityEn": "6 أكتوبر",
-      "district": "6 أكتوبر",
-      "address": "حدائق أكتوبر - كمبوند بداية",
-      "phone": "01011111234",
-      "googleRating": 4.5,
-      "googleReviews": 6,
-      "description": "عيادة متخصصة في تجميل وجلدية في 6 أكتوبر",
+      "id": "clinic-92",
+      "name": "مركز تجميل رويال",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "6 أكتوبر - الحي الحادي عشر - مول المعز",
+      "phone": "01200001234",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
       "services": [
-        "تجميل وجلدية"
+        "تجميل الوجه",
+        "ليزر بشرة"
       ],
       "socialMedia": {},
       "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Clinic"
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
     },
     {
-      "id": "new-Vedette-Clinic--Dr--Jehan-Yehia--6 أ",
-      "name": "Vedette Clinic (Dr. Jehan Yehia)",
-      "nameEn": "Vedette Clinic (Dr. Jehan Yehia)",
-      "specialty": "تجميل وجلدية",
-      "specialtyEn": "تجميل وجلدية",
-      "city": "6 أكتوبر",
-      "cityEn": "6 أكتوبر",
-      "district": "6 أكتوبر",
-      "address": "6 أكتوبر الحي السابع ميدان ماجده مبني بريما فيستا الطبي الدور الثالت",
-      "phone": "+20 10 12534051",
-      "googleRating": 4.5,
-      "googleReviews": 33,
-      "description": "عيادة متخصصة في تجميل وجلدية في 6 أكتوبر",
+      "id": "clinic-93",
+      "name": "د. شريف تجميل وليزر",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "6 أكتوبر - الحي الأول - ميدان الحصري",
+      "phone": "01233331234",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
       "services": [
-        "تجميل وجلدية"
+        "تجميل الوجه",
+        "ليزر بشرة"
       ],
       "socialMedia": {},
       "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Clinic"
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
     },
     {
-      "id": "new-د--منى-تجميل-6 أ",
-      "name": "د. منى تجميل",
-      "nameEn": "د. منى تجميل",
-      "specialty": "تجميل وجلدية",
-      "specialtyEn": "تجميل وجلدية",
-      "city": "6 أكتوبر",
-      "cityEn": "6 أكتوبر",
-      "district": "6 أكتوبر",
-      "address": "6 أكتوبر - الحي المتميز - بجوار رامو",
-      "phone": "01011111111",
-      "googleRating": 4.5,
-      "googleReviews": 13,
-      "description": "عيادة متخصصة في تجميل وجلدية في 6 أكتوبر",
+      "id": "clinic-94",
+      "name": "مركز تجميل جلامور",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "6 أكتوبر - الحي المتميز - مول سنترال",
+      "phone": "01044441234",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
       "services": [
-        "تجميل وجلدية"
+        "تجميل الوجه",
+        "ليزر بشرة"
       ],
       "socialMedia": {},
       "category": "A",
-      "image": "https://via.placeholder.com/400x300?text=Clinic"
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-95",
+      "name": "عيادة د. مريم تجميل",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "حدائق أكتوبر - سكن مصر - بجوار المسجد",
+      "phone": "01155551234",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-96",
+      "name": "د. عمرو جلدية وتجميل",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "6 أكتوبر - الحي الرابع - المحور المركزي",
+      "phone": "01077771234",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-97",
+      "name": "مركز تجميل سيلفر",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "6 أكتوبر - الحي الخامس - سنتر المدينة",
+      "phone": "01188881234",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-98",
+      "name": "عيادة د. نادين تجميل",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "حدائق أكتوبر - كمبوند دجلة جاردنز",
+      "phone": "01299991234",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-99",
+      "name": "د. تامر جراحة تجميل",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "6 أكتوبر - الحي السابع - أبراج علي الدين",
+      "phone": "01100005678",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
+    },
+    {
+      "id": "clinic-100",
+      "name": "مركز تجميل دايموند",
+      "specialty": "تجميل",
+      "city": "القاهرة",
+      "district": "",
+      "address": "6 أكتوبر - الحي الثامن - سنتر النخيل",
+      "phone": "01200005678",
+      "googleRating": 4.9,
+      "googleReviews": 120,
+      "description": "من أفضل المراكز الطبية المتخصصة في التجميل والليزر.",
+      "services": [
+        "تجميل الوجه",
+        "ليزر بشرة"
+      ],
+      "socialMedia": {},
+      "category": "A",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500"
     }
   ],
   "specialties": [
     {
-      "id": "specialty-001",
+      "id": "spec-1",
       "name": "تجميل",
-      "nameEn": "cosmetics",
-      "slug": "cosmetics",
-      "description": "تخصص جراحات التجميل والعناية بالمظهر الخارجي",
-      "descriptionEn": "Cosmetic surgery and aesthetic procedures",
-      "icon": "✨",
-      "relatedServices": [
-        "جراحات تجميل",
-        "ليزر",
-        "حقن الفيلر",
-        "البوتوكس",
-        "تقشير"
-      ]
+      "slug": "cosmetic"
     },
     {
-      "id": "specialty-002",
+      "id": "spec-2",
       "name": "جلدية",
-      "nameEn": "dermatology",
-      "slug": "dermatology",
-      "description": "تخصص الأمراض الجلدية والعناية بصحة الجلد",
-      "descriptionEn": "Dermatology and skin health",
-      "icon": "🩺",
-      "relatedServices": [
-        "علاج حب الشباب",
-        "علاج الإكزيما",
-        "إزالة الوشم",
-        "ليزر"
-      ]
+      "slug": "dermatology"
     },
     {
-      "id": "specialty-003",
+      "id": "spec-3",
       "name": "ليزر",
-      "nameEn": "laser",
-      "slug": "laser",
-      "description": "تخصص العلاجات بالليزر والتقنيات الحديثة",
-      "descriptionEn": "Laser treatments and modern technologies",
-      "icon": "💡",
-      "relatedServices": [
-        "إزالة الشعر بالليزر",
-        "تقشير الجلد",
-        "إزالة الوشم",
-        "علاج حب الشباب"
-      ]
-    },
-    {
-      "id": "specialty-004",
-      "name": "جلدية وتجميل",
-      "nameEn": "dermatology-cosmetics",
-      "slug": "dermatology-cosmetics",
-      "description": "تخصص الجلدية والتجميل معاً",
-      "descriptionEn": "Dermatology and cosmetics combined",
-      "icon": "💆",
-      "relatedServices": [
-        "أمراض جلدية",
-        "جراحات تجميل",
-        "ليزر",
-        "حقن"
-      ]
+      "slug": "laser"
     }
   ],
   "cities": [
     {
-      "id": "city-001",
+      "id": "city-1",
       "name": "القاهرة",
-      "nameEn": "Cairo",
-      "slug": "cairo",
-      "description": "العاصمة المصرية وأكبر مدينة طبية في الشرق الأوسط",
-      "descriptionEn": "The capital of Egypt and the largest medical city in the Middle East",
-      "population": 20000000,
-      "clinicCount": 12,
-      "image": "https://via.placeholder.com/600x400?text=Cairo"
+      "slug": "cairo"
     },
     {
-      "id": "city-002",
+      "id": "city-2",
       "name": "الجيزة",
-      "nameEn": "Giza",
-      "slug": "giza",
-      "description": "محافظة الجيزة بخدمات طبية متقدمة",
-      "descriptionEn": "Giza Governorate with advanced medical services",
-      "population": 5000000,
-      "clinicCount": 8,
-      "image": "https://via.placeholder.com/600x400?text=Giza"
+      "slug": "giza"
     }
   ]
 }

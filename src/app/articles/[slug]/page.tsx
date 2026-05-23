@@ -15,5 +15,5 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
     return <div dangerouslySetInnerHTML={{ __html: content }} />;
   } catch {
     notFound();
-  }
+   }
 }

@@ -1,10 +1,7 @@
- * Data Utility Functions - CodeHub Medical Directory v2
- * Fully Automated & Dynamic Version linked with Desert Admiral Engine
- */
-
 import clinicsData from '../data/clinics.json';
+import { readFileSync } from 'fs';
+import { join } from 'path';
 
-// الـ Interfaces الأصلية للموقع لضمان استقرار النظام
 export interface Clinic {
   id: string;
   name: string;
@@ -50,274 +47,78 @@ export interface City {
   image: string;
 }
 
-// 🚀 الـ Interface الجديد الخاص بالمقالات الديناميكية
 export interface Article {
   title: string;
   slug: string;
   description: string;
   category?: string;
+  full_html?: string;
 }
 
-/**
- * Get all clinics
- */
-export function getAllClinics(): Clinic[] {
-  return (clinicsData as any).clinics || [];
+async function getSyncedData() {
+  try {
+    const filePath = join(process.cwd(), 'public', 'data_sync.json');
+    const fileContent = readFileSync(filePath, 'utf8');
+    return JSON.parse(fileContent);
+  } catch (err) {
+    try {
+      const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://medical-directory-ar-c2m5.vercel.app';
+      const res = await fetch(`${siteUrl}/data_sync.json`, { next: { revalidate: 10 } });
+      if (res.ok) return await res.json();
+    } catch (fetchErr) {
+      console.error('Failed to fetch sync data');
+    }
+    return null;
+  }
 }
 
-/**
- * Get clinic by ID
- */
-export function getClinicById(id: string): Clinic | undefined {
-  return getAllClinics().find((clinic) => clinic.id === id);
+export async function getAllClinics(): Promise<Clinic[]> {
+  const synced = await getSyncedData();
+  const baseClinics = (clinicsData as any).clinics || [];
+  const extraClinics = synced?.clinics || [];
+  return [...baseClinics, ...extraClinics];
 }
 
-/**
- * Get clinics by city
- */
-export function getClinicsByCity(city: string): Clinic[] {
-  return getAllClinics().filter(
-    (clinic) => clinic.city.toLowerCase() === city.toLowerCase() || clinic.cityEn.toLowerCase() === city.toLowerCase()
-  );
-}
-
-/**
- * Get clinics by specialty
- */
-export function getClinicsBySpecialty(specialty: string): Clinic[] {
-  return getAllClinics().filter(
-    (clinic) => clinic.specialty.toLowerCase() === specialty.toLowerCase()
-  );
-}
-
-/**
- * Get clinics by city and specialty
- */
-export function getClinicsByCityAndSpecialty(
-  city: string,
-  specialty: string
-): Clinic[] {
-  return getAllClinics().filter(
-    (clinic) =>
-      (clinic.city.toLowerCase() === city.toLowerCase() || clinic.cityEn.toLowerCase() === city.toLowerCase()) &&
-      clinic.specialty.toLowerCase() === specialty.toLowerCase()
-  );
-}
-
-/**
- * Get clinics by district
- */
-export function getClinicsByDistrict(district: string): Clinic[] {
-  return getAllClinics().filter(
-    (clinic) => clinic.district.toLowerCase() === district.toLowerCase()
-  );
-}
-
-/**
- * Get top rated clinics
- */
-export function getTopRatedClinics(limit: number = 10): Clinic[] {
-  return [...getAllClinics()]
-    .sort((a, b) => b.googleRating - a.googleRating)
+export async function getTopRatedClinics(limit: number = 10): Promise<Clinic[]> {
+  const clinics = await getAllClinics();
+  return [...clinics]
+    .sort((a, b) => (b.googleRating || 0) - (a.googleRating || 0))
     .slice(0, limit);
 }
 
-/**
- * Get clinics by category
- */
-export function getClinicsByCategory(category: string): Clinic[] {
-  return getAllClinics().filter((clinic) => clinic.category === category);
+export async function getAllSpecialties(): Promise<Specialty[]> {
+  const synced = await getSyncedData();
+  const baseSpecs = (clinicsData as any).specialties || [];
+  const extraSpecs = synced?.specialties || [];
+  return [...baseSpecs, ...extraSpecs];
 }
 
-/**
- * Search clinics
- */
-export function searchClinics(query: string): Clinic[] {
-  const lowerQuery = query.toLowerCase();
-  return getAllClinics().filter(
-    (clinic) =>
-      clinic.name.toLowerCase().includes(lowerQuery) ||
-      clinic.nameEn.toLowerCase().includes(lowerQuery) ||
-      clinic.specialty.toLowerCase().includes(lowerQuery) ||
-      clinic.city.toLowerCase().includes(lowerQuery) ||
-      clinic.district.toLowerCase().includes(lowerQuery)
-  );
+export async function getAllCities(): Promise<City[]> {
+  const synced = await getSyncedData();
+  const baseCities = (clinicsData as any).cities || [];
+  const extraCities = synced?.cities || [];
+  return [...baseCities, ...extraCities];
 }
 
-/**
- * Get all specialties
- */
-export function getAllSpecialties(): Specialty[] {
-  return (clinicsData as any).specialties || [];
-}
-
-/**
- * Get specialty by slug
- */
-export function getSpecialtyBySlug(slug: string): Specialty | undefined {
-  return getAllSpecialties().find((spec) => spec.slug === slug);
-}
-
-/**
- * Get specialty by name
- */
-export function getSpecialtyByName(name: string): Specialty | undefined {
-  return getAllSpecialties().find(
-    (spec) => spec.name.toLowerCase() === name.toLowerCase()
-  );
-}
-
-/**
- * Get all cities
- */
-export function getAllCities(): City[] {
-  return (clinicsData as any).cities || [];
-}
-
-/**
- * Get city by slug
- */
-export function getCityBySlug(slug: string): City | undefined {
-  return getAllCities().find((city) => city.slug === slug);
-}
-
-/**
- * Get city by name
- */
-export function getCityByName(name: string): City | undefined {
-  return getAllCities().find(
-    (city) => city.name.toLowerCase() === name.toLowerCase()
-  );
-}
-
-/**
- * Get unique cities from clinics
- */
-export function getUniqueCities(): string[] {
-  const cities = new Set(getAllClinics().map((clinic) => clinic.city));
-  return Array.from(cities).sort();
-}
-
-/**
- * Get unique specialties from clinics
- */
-export function getUniqueSpecialties(): string[] {
-  const specialties = new Set(
-    getAllClinics().map((clinic) => clinic.specialty)
-  );
-  return Array.from(specialties).sort();
-}
-
-/**
- * Get unique districts from clinics
- */
-export function getUniqueDistricts(): string[] {
-  const districts = new Set(
-    getAllClinics().map((clinic) => clinic.district)
-  );
-  return Array.from(districts).sort();
-}
-
-/**
- * Get clinics count by city
- */
-export function getClinicsCountByCity(city: string): number {
-  return getAllClinics().filter(
-    (clinic) => clinic.city.toLowerCase() === city.toLowerCase() || clinic.cityEn.toLowerCase() === city.toLowerCase()
-  ).length;
-}
-
-/**
- * Get clinics count by specialty
- */
-export function getClinicsCountBySpecialty(specialty: string): number {
-  return getAllClinics().filter(
-    (clinic) => clinic.specialty.toLowerCase() === specialty.toLowerCase()
-  ).length;
-}
-
-/**
- * Get similar clinics (same specialty and city)
- */
-export function getSimilarClinics(clinic: Clinic, limit: number = 5): Clinic[] {
-  return getAllClinics()
-    .filter(
-      (c) =>
-        c.id !== clinic.id &&
-        c.specialty === clinic.specialty &&
-        c.city === clinic.city
-    )
-    .sort((a, b) => b.googleRating - a.googleRating)
-    .slice(0, limit);
-}
-
-/**
- * Get related clinics (same specialty, different city)
- */
-export function getRelatedClinics(clinic: Clinic, limit: number = 5): Clinic[] {
-  return getAllClinics()
-    .filter(
-      (c) => c.id !== clinic.id && c.specialty === clinic.specialty
-    )
-    .sort((a, b) => b.googleRating - a.googleRating)
-    .slice(0, limit);
-}
-
-/**
- * Generate static paths for clinics
- */
-export function generateClinicPaths() {
-  return getAllClinics().map((clinic) => ({
-    params: {
-      id: clinic.id,
-    },
+export async function getTopArticles(limit: number = 6): Promise<Article[]> {
+  const synced = await getSyncedData();
+  const baseArticles = (clinicsData as any).articles || [];
+  const extraArticles = synced?.articles || [];
+  
+  const allArticles = [...baseArticles, ...extraArticles].map(art => ({
+    ...art,
+    slug: art.slug || art.id?.replace('.html', '') || 'article'
   }));
+
+  return allArticles.slice(0, limit);
 }
 
-/**
- * Generate static paths for cities
- */
-export function generateCityPaths() {
-  return getAllCities().map((city) => ({
-    params: {
-      slug: city.slug,
-    },
-  }));
+export async function getCityBySlug(slug: string): Promise<City | undefined> {
+  const cities = await getAllCities();
+  return cities.find((city) => city.slug === slug);
 }
 
-/**
- * Generate static paths for specialties
- */
-export function generateSpecialtyPaths() {
-  return getAllSpecialties().map((specialty) => ({
-    params: {
-      slug: specialty.slug,
-    },
-  }));
+export async function getSpecialtyBySlug(slug: string): Promise<Specialty | undefined> {
+  const specs = await getAllSpecialties();
+  return specs.find((spec) => spec.slug === slug);
 }
-
-/**
- * Generate static paths for specialty + city combinations
- */
-export function generateSpecialtyCityPaths() {
-  const paths: any[] = [];
-  getAllSpecialties().forEach((specialty) => {
-    getAllCities().forEach((city) => {
-      paths.push({
-        params: {
-          specialty: specialty.slug,
-          city: city.slug,
-        },
-      });
-    });
-  });
-  return paths;
-}
-
-/**
- * 🚀 الدالة الأوتوماتيكية الجديدة: قراءة المقالات من ملف الـ JSON مباشرة
- * تُغذي قسم المقالات في الصفحة الرئيسية بدون أي تعديل كود مستقبلي
- */
-export function getTopArticles(limit: number = 6): Article[] {
-  return ((clinicsData as any).articles || []).slice(0, limit);
-   }

@@ -1,19 +1,55 @@
-import { readdirSync, readFileSync } from 'fs';
+import { readFileSync, readdirSync } from 'fs';
 import { join } from 'path';
 import { notFound } from 'next/navigation';
 
-const articlesDir = join(process.cwd(), 'public/articles');
-
-export async function generateStaticParams() {
-  const files = readdirSync(articlesDir).filter(f => f.endsWith('.html'));
-  return files.map(f => ({ slug: f.replace('.html', '') }));
+async function getArticleFromJSON(slug: string) {
+  try {
+    const filePath = join(process.cwd(), 'public', 'data_sync.json');
+    const fileContent = readFileSync(filePath, 'utf8');
+    const data = JSON.parse(fileContent);
+    const articles = data.articles || [];
+    return articles.find((a: any) => 
+      a.slug === slug || a.id === `${slug}.html` || a.id === slug
+    );
+  } catch (e) {
+    return null;
+  }
 }
 
-export default function ArticlePage({ params }: { params: { slug: string } }) {
+export default async function ArticlePage({ params }: { params: { slug: string } }) {
+  const { slug } = params;
+  const decodedSlug = decodeURIComponent(slug).replace('.html', '');
+  
+  const jsonArticle = await getArticleFromJSON(decodedSlug);
+  if (jsonArticle && jsonArticle.full_html) {
+    return (
+      <div 
+        className="dynamic-article" 
+        dangerouslySetInnerHTML={{ __html: jsonArticle.full_html }} 
+      />
+    );
+  }
+
   try {
-    const content = readFileSync(join(articlesDir, `${params.slug}.html`), 'utf-8');
+    const articlesDir = join(process.cwd(), 'public/articles');
+    const filePath = join(articlesDir, `${decodedSlug}.html`);
+    const content = readFileSync(filePath, 'utf8');
     return <div dangerouslySetInnerHTML={{ __html: content }} />;
-  } catch {
+  } catch (error) {
     notFound();
-   }
+  }
+}
+
+export async function generateStaticParams() {
+  try {
+    const articlesDir = join(process.cwd(), 'public/articles');
+    const files = readdirSync(articlesDir);
+    return files
+      .filter(file => file.endsWith('.html'))
+      .map(file => ({
+        slug: file.replace('.html', ''),
+      }));
+  } catch (e) {
+    return [];
+  }
 }

@@ -1,7 +1,3 @@
-/**
- * Data Utility Functions - CodeHub Medical Directory v2
- * Fully Automated & Dynamic Version linked with Desert Admiral Engine
- */
 
 import clinicsData from '../data/clinics.json';
 

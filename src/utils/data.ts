@@ -1,3 +1,6 @@
+ * Data Utility Functions - CodeHub Medical Directory v2
+ * Fully Automated & Dynamic Version linked with Desert Admiral Engine
+ */
 
 import clinicsData from '../data/clinics.json';
 
@@ -317,5 +320,4 @@ export function generateSpecialtyCityPaths() {
  */
 export function getTopArticles(limit: number = 6): Article[] {
   return ((clinicsData as any).articles || []).slice(0, limit);
-}
-
+   }

@@ -1,51 +1,36 @@
-import Link from 'next/link';
+import { notFound } from 'next/navigation';
 import { getSyncedData } from '@/utils/data';
 
-export const metadata = {
-  title: 'المقالات الطبية | دليل العيادات',
-  description: 'مقالات طبية موثوقة في التجميل والجلدية',
-};
-
-export default async function ArticlesPage() {
-  // جلب كل البيانات المدمجة من ملفات الـ JSON
+export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> | { slug: string } }) {
+  const { slug } = await params;
+  const decodedSlug = decodeURIComponent(slug).replace('.html', '');
+  
+  // جلب كل البيانات المدمجة من كل الملفات
   const data = await getSyncedData();
-  const articles = data.articles || [];
+  
+  // البحث عن المقالة في المصفوفة المدمجة
+  const article = data.articles.find((a: any) => 
+    a.slug === decodedSlug || a.id === `${decodedSlug}.html` || a.id === decodedSlug
+  );
+
+  if (!article || !article.full_html) {
+    notFound();
+  }
 
   return (
-    <div className="container mx-auto px-4 py-12" dir="rtl">
-      <h1 className="text-3xl font-bold mb-8 text-right">المقالات الطبية</h1>
-      
-      {articles.length === 0 ? (
-        <p className="text-center text-gray-500">لا توجد مقالات متاحة حالياً.</p>
-      ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {articles.map((article: any, index: number) => {
-            // استخدام slug أو id كمعرف للرابط
-            const slug = (article.slug || article.id || `article-${index}`).replace('.html', '');
-            const title = article.title || decodeURIComponent(slug).replace(/-/g, ' ');
-            
-            return (
-              <Link
-                key={slug}
-                href={`/articles/${encodeURIComponent(slug)}`}
-                className="bg-white rounded-lg shadow p-6 hover:shadow-lg transition text-right flex flex-col justify-between"
-              >
-                <div>
-                  <h2 className="font-bold text-gray-800 text-lg leading-relaxed mb-4">
-                    {title}
-                  </h2>
-                  {article.description && (
-                    <p className="text-gray-600 text-sm mb-4 line-clamp-3">
-                      {article.description}
-                    </p>
-                  )}
-                </div>
-                <span className="text-blue-600 text-sm font-medium">اقرأ المزيد ←</span>
-              </Link>
-            );
-          })}
-        </div>
-      )}
-    </div>
+    <article className="container mx-auto px-4 py-8 max-w-4xl" dir="rtl">
+      <div 
+        className="prose prose-lg max-w-none dynamic-content"
+        dangerouslySetInnerHTML={{ __html: article.full_html }} 
+      />
+    </article>
   );
+}
+
+// توليد الروابط الثابتة تلقائياً لكل المقالات الموجودة في ملفات الـ JSON
+export async function generateStaticParams() {
+  const data = await getSyncedData();
+  return data.articles.map((a: any) => ({
+    slug: (a.slug || a.id).replace('.html', ''),
+  }));
 }

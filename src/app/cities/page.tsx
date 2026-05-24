@@ -1,92 +1,80 @@
-import { Metadata } from 'next';
-import Link from 'next/link';
-import { getAllCities } from '@/utils/data';
+import { Search, MapPin, Filter } from 'lucide-react';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import ClinicCard from '@/components/ClinicCard';
+import { getSyncedData } from '@/utils/data';
 
-export const metadata: Metadata = {
-  title: 'المدن - دليل العيادات الطبي',
-  description: 'جميع المدن المتوفرة في دليل العيادات الطبي',
-  keywords: ['مدن', 'عيادات', 'القاهرة', 'الجيزة'],
-};
+export default async function ClinicsPage() {
+  // جلب البيانات الديناميكية من ملفات الـ JSON المدمجة
+  const data = await getSyncedData();
+  const clinics = data.clinics || [];
 
-export default function CitiesPage() {
-  const cities = getAllCities();
+  // استخراج المدن والتخصصات الفريدة للفلترة
+  const cities = Array.from(new Set(clinics.map((c: any) => c.city)));
+  const specialties = Array.from(new Set(clinics.map((c: any) => c.specialty)));
 
   return (
-    <>
-      {/* Breadcrumb */}
-      <div className="bg-gray-100 py-4">
+    <div className="min-h-screen bg-gray-50" dir="rtl">
+      <Header />
+      
+      <main className="py-12">
         <div className="container mx-auto px-4">
-          <div className="flex items-center gap-2 text-sm text-gray-600">
-            <Link href="/" className="text-blue-600 hover:text-blue-800">
-              الرئيسية
-            </Link>
-            <span>/</span>
-            <span className="text-gray-800 font-semibold">المدن</span>
+          {/* Header Section */}
+          <div className="mb-12">
+            <h1 className="text-3xl font-bold text-gray-900 mb-4 text-right">استكشف العيادات الطبية</h1>
+            <p className="text-gray-600 text-right">ابحث عن أفضل الرعاية الطبية في منطقتك وبين التخصصات المختلفة</p>
           </div>
-        </div>
-      </div>
 
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-12">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold mb-2">المدن</h1>
-          <p className="text-blue-100 text-lg">
-            اختر المدينة لعرض جميع العيادات فيها
-          </p>
-        </div>
-      </section>
-
-      {/* Cities Grid */}
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {cities.map((city) => (
-            <Link
-              key={city.id}
-              href={`/clinics/${city.slug}`}
-              className="bg-white rounded-lg shadow hover:shadow-lg transition-all duration-300 cursor-pointer overflow-hidden"
-            >
-              <div className="relative h-48 bg-gray-200 overflow-hidden">
-                <img
-                  src={city.image}
-                  alt={city.name}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+          {/* Search and Filter Bar */}
+          <div className="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div className="relative">
+                <Search className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
+                <input 
+                  type="text" 
+                  placeholder="ابحث عن عيادة أو تخصص..."
+                  className="w-full pr-12 pl-4 py-3 bg-gray-50 border-none rounded-xl focus:ring-2 focus:ring-blue-500 text-right"
                 />
               </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-bold text-gray-800 mb-2">
-                  {city.name}
-                </h3>
-                <p className="text-gray-600 mb-4 line-clamp-2">
-                  {city.description}
-                </p>
-                <div className="flex items-center justify-between">
-                  <span className="text-sm text-gray-500">
-                    {city.clinicCount} عيادة
-                  </span>
-                  <span className="text-blue-600 font-semibold">→</span>
-                </div>
+              
+              <div className="relative">
+                <MapPin className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
+                <select className="w-full pr-12 pl-4 py-3 bg-gray-50 border-none rounded-xl focus:ring-2 focus:ring-blue-500 appearance-none text-right">
+                  <option value="">كل المدن</option>
+                  {cities.map((city: any) => (
+                    <option key={city} value={city}>{city}</option>
+                  ))}
+                </select>
               </div>
-            </Link>
-          ))}
-        </div>
-      </div>
 
-      {/* SEO Content */}
-      <section className="bg-gray-100 py-12">
-        <div className="container mx-auto px-4">
-          <div className="bg-white p-8 rounded-lg shadow">
-            <h2 className="text-2xl font-bold mb-4">المدن المتوفرة</h2>
-            <p className="text-gray-700 leading-relaxed mb-4">
-              يوفر دليل العيادات الطبي قائمة شاملة بجميع المدن التي تتوفر فيها عيادات ومراكز طبية.
-              اختر المدينة التي تبحث عنها لعرض جميع العيادات فيها.
-            </p>
-            <p className="text-gray-700 leading-relaxed">
-              كل مدينة تحتوي على عيادات متعددة توفر خدمات طبية متقدمة وذات جودة عالية.
-              يمكنك الاطلاع على تقييمات العملاء والتواصل مع العيادة مباشرة من خلال موقعنا.
-            </p>
+              <div className="relative">
+                <Filter className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
+                <select className="w-full pr-12 pl-4 py-3 bg-gray-50 border-none rounded-xl focus:ring-2 focus:ring-blue-500 appearance-none text-right">
+                  <option value="">كل التخصصات</option>
+                  {specialties.map((spec: any) => (
+                    <option key={spec} value={spec}>{spec}</option>
+                  ))}
+                </select>
+              </div>
+            </div>
           </div>
+
+          {/* Clinics Grid */}
+          {clinics.length === 0 ? (
+            <div className="text-center py-20 bg-white rounded-3xl border border-dashed border-gray-200">
+              <p className="text-gray-500">لا توجد عيادات مضافة حالياً في ملفات البيانات.</p>
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {clinics.map((clinic: any) => (
+                <ClinicCard key={clinic.id} clinic={clinic} />
+              ))}
+            </div>
+          )}
         </div>
-      </section>
-    </>
+      </main>
+
+      <Footer />
+    </div>
   );
 }

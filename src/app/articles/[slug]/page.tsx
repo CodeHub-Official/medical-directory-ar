@@ -1,55 +1,36 @@
-import { readFileSync, readdirSync } from 'fs';
-import { join } from 'path';
 import { notFound } from 'next/navigation';
+import { getSyncedData } from '@/utils/data';
 
-async function getArticleFromJSON(slug: string) {
-  try {
-    const filePath = join(process.cwd(), 'public', 'data_sync.json');
-    const fileContent = readFileSync(filePath, 'utf8');
-    const data = JSON.parse(fileContent);
-    const articles = data.articles || [];
-    return articles.find((a: any) => 
-      a.slug === slug || a.id === `${slug}.html` || a.id === slug
-    );
-  } catch (e) {
-    return null;
-  }
-}
-
-export default async function ArticlePage({ params }: { params: { slug: string } }) {
-  const { slug } = params;
+export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> | { slug: string } }) {
+  const { slug } = await params;
   const decodedSlug = decodeURIComponent(slug).replace('.html', '');
   
-  const jsonArticle = await getArticleFromJSON(decodedSlug);
-  if (jsonArticle && jsonArticle.full_html) {
-    return (
-      <div 
-        className="dynamic-article" 
-        dangerouslySetInnerHTML={{ __html: jsonArticle.full_html }} 
-      />
-    );
-  }
+  // جلب كل البيانات المدمجة من كل الملفات
+  const data = await getSyncedData();
+  
+  // البحث عن المقالة في المصفوفة المدمجة
+  const article = data.articles.find((a: any) => 
+    a.slug === decodedSlug || a.id === `${decodedSlug}.html` || a.id === decodedSlug
+  );
 
-  try {
-    const articlesDir = join(process.cwd(), 'public/articles');
-    const filePath = join(articlesDir, `${decodedSlug}.html`);
-    const content = readFileSync(filePath, 'utf8');
-    return <div dangerouslySetInnerHTML={{ __html: content }} />;
-  } catch (error) {
+  if (!article || !article.full_html) {
     notFound();
   }
+
+  return (
+    <article className="container mx-auto px-4 py-8 max-w-4xl" dir="rtl">
+      <div 
+        className="prose prose-lg max-w-none dynamic-content"
+        dangerouslySetInnerHTML={{ __html: article.full_html }} 
+      />
+    </article>
+  );
 }
 
+// توليد الروابط الثابتة تلقائياً لكل المقالات الموجودة في ملفات الـ JSON
 export async function generateStaticParams() {
-  try {
-    const articlesDir = join(process.cwd(), 'public/articles');
-    const files = readdirSync(articlesDir);
-    return files
-      .filter(file => file.endsWith('.html'))
-      .map(file => ({
-        slug: file.replace('.html', ''),
-      }));
-  } catch (e) {
-    return [];
-  }
+  const data = await getSyncedData();
+  return data.articles.map((a: any) => ({
+    slug: (a.slug || a.id).replace('.html', ''),
+  }));
 }
